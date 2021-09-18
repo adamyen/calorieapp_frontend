@@ -1,12 +1,24 @@
+
 import React from 'react';
+import {connect} from 'react-redux';
+import Home from './Home';
 
-
-function App() {
-  return (
-    <div className="App">
-      <h1>healthify</h1>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Home />
+      </div>
+    );
+  }
 }
 
-export default App;
+function mapStateToProps (state){
+
+  return {
+
+  }
+
+}
+export default connect(mapStateToProps)(App);
+
