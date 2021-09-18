@@ -17,24 +17,24 @@ const ImgSlider = (props) => {
     return (
         
             <Carousel {...settings}>
-              <Wrap>
+              {/* <Wrap>
                   <a>
                       <img src="/images/TimelineCovers.pro_Best-Covers-For-Facebook-Timeline-sunflower.jpg" alt="" />
                   </a>
-              </Wrap>
+              </Wrap> */}
               <Wrap>
                   <a>
-                      <img src="/images/nature-design.jpeg" alt="" />
+                      <img src="/images/sp111.png" alt="" />
                   </a>
               </Wrap>
               <Wrap>
                   <a>
-                      <img src="/images/spring-facebook-cover-preview-1.jpeg" alt="" />
+                      <img src="/images/sp222.png" alt="" />
                   </a>
               </Wrap>
               <Wrap>
                   <a>
-                      <img src="/images/fall-facebook-cover-preview-7.jpeg" alt="" />
+                      <img src="/images/sp333.png" alt="" />
                   </a>
               </Wrap>
             </Carousel>
