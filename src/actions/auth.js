@@ -13,7 +13,7 @@ import {
   EDIT_USER_FAILED
 } from './actionTypes';
 import { getFormBody } from '../helpers/utils';
-//import {getAuthTokenFromLocalStorage} from '../helpers/utils';
+import {getAuthTokenFromLocalStorage} from '../helpers/utils';
 // import { fetchUserFriends } from '../actions/friends';
 
 export function startLogin() {

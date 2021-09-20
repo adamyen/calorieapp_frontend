@@ -4,7 +4,7 @@ import {connect} from 'react-redux';
 
 import {BrowserRouter as Router,Link,Route, Switch} from 'react-router-dom';
 
-import {Home, Page404,Navbar, Login} from './';
+import {Home, Page404,Navbar, Login,Signup} from './';
 import PropTypes from 'prop-types';
 
 
@@ -21,7 +21,7 @@ class App extends React.Component {
           return <Home {...props}/>
         }}/>
         <Route path ="/login" component={Login}/>
-        {/* <Route path ="/signup" component={SignUp}/>  */}
+        <Route path ="/signup" component={Signup}/> 
         <Route component={Page404}/>
 
       </Switch>
