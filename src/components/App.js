@@ -1,24 +1,11 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import Home from './Home';
+// import Home from './Home';
 
-import {BrowserRouter as Router,Link,Route} from 'react-router-dom';
-import {Navbar} from './Navbar';
+import {BrowserRouter as Router,Link,Route, Switch} from 'react-router-dom';
 
-const Login = () => {
-  return(<div>
-    Login
-  </div>)
-    
-  
-}
-
-const SignUp = () => {
-  return (
-  <div>
-    SignUp
-  </div>)
-}
+import {Home, Page404,Navbar, Login} from './';
+import PropTypes from 'prop-types';
 
 
 class App extends React.Component {
@@ -26,27 +13,19 @@ class App extends React.Component {
     return (
       <Router>
       <div>
-        {/* <Navbar /> */}
+        <Navbar />
         {/* <Home /> */}
 
-        <ul>
-          <li>
-            <Link to="/">Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/login">Login
-            </Link>
-          </li>
-          <li>
-            <Link to="/signup">SignUp
-            </Link>
-          </li>
-        </ul>
-
-        <Route exact path ="/" component={Home}/>
+      <Switch>
+      <Route exact path ="/" render={(props) => {
+          return <Home {...props}/>
+        }}/>
         <Route path ="/login" component={Login}/>
-        <Route path ="/signup" component={SignUp}/>
+        {/* <Route path ="/signup" component={SignUp}/>  */}
+        <Route component={Page404}/>
+
+      </Switch>
+        
 
       </div>
       </Router>
