@@ -12,7 +12,8 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-      <div>
+      <div className="wrapper">
+      
         <Navbar />
         {/* <Home /> */}
 
@@ -28,6 +29,7 @@ class App extends React.Component {
         
 
       </div>
+      
       </Router>
     );
   }

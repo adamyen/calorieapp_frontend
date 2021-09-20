@@ -42,14 +42,14 @@ class Navbar extends React.Component {
             />
           </Link>
         
-        <div className="header__input">
+        {/* <div className="header__input"> */}
           {/* <img
             className="search-icon"
             src="https://image.flaticon.com/icons/svg/483/483356.svg"
             alt="search-icon"
           /> */}
           {/* <SearchIcon/> */}
-          <input placeholder="Search" onChange={this.handleSearch} style={{border:'none',backgroundColor:'transparent',outlineWidth:'0',width:'500px'}}/>
+          {/* <input placeholder="Search" onChange={this.handleSearch} style={{border:'none',backgroundColor:'transparent',outlineWidth:'0',width:'500px'}}/> */}
           {/* {results.length > 0 && (
             <div className="search-results">
               <ul>
@@ -67,7 +67,7 @@ class Navbar extends React.Component {
               </ul>
             </div>
           )} */}
-        </div>
+        {/* </div> */}
         </div>
         {/* <div className="header__middle">
           <div className="header__option header__option--active">
@@ -112,7 +112,7 @@ class Navbar extends React.Component {
               {/* )} */}
               }
               {/* {auth.isLoggedIn &&  */}
-              <li onClick={this.logOut} style={{color:'gray',marginLeft:'0px',fontWeight:'bolder'}}>Logout</li>
+              {/* <li onClick={this.logOut} style={{color:'gray',marginLeft:'0px',fontWeight:'bolder'}}>Logout</li> */}
               {/* } */}
               {/* {!auth.isLoggedIn && ( */}
                 <li>

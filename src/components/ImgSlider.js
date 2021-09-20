@@ -43,7 +43,10 @@ const ImgSlider = (props) => {
 }
 
 const Carousel = styled(Slider)`
-margin-top: 20px;
+margin-top: 30px;
+margin-left:auto;
+margin-right:auto;
+
 
 & > button {
     opacity: 0;
@@ -103,7 +106,7 @@ const Wrap = styled.div`
     }
     // &:hover {
     //   padding: 0;
-    //   border: 4px solid rgba(249, 249, 249, 0.8);
+    // //   border: 4px solid rgba(249, 249, 249, 0.8);
     //   transition-duration: 300ms;
     // }
   }
