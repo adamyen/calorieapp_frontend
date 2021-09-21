@@ -15,8 +15,8 @@ const ImgSlider = (props) => {
         autoplay: true
     }
     return (
-        
-            <Carousel {...settings}>
+        <div className="wrapper" style={{width:'auto',padding:'10px'}}>
+            <Carousel {...settings} style={{marginright:'10px'}}>
               {/* <Wrap>
                   <a>
                       <img src="/images/TimelineCovers.pro_Best-Covers-For-Facebook-Timeline-sunflower.jpg" alt="" />
@@ -38,6 +38,8 @@ const ImgSlider = (props) => {
                   </a>
               </Wrap>
             </Carousel>
+
+            </div>
         
     )
 }

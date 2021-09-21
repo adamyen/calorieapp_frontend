@@ -2,14 +2,73 @@ import React from 'react';
 import {connect} from 'react-redux';
 // import Home from './Home';
 
-import {BrowserRouter as Router,Link,Route, Switch} from 'react-router-dom';
+import jwtDecode from 'jwt-decode';
 
-import {Home, Page404,Navbar, Login,Signup} from './';
+import {BrowserRouter as Router,Link,Route, Switch,Redirect} from 'react-router-dom';
+
+import {Home, Page404,Navbar, Login,Signup,Settings} from './';
 import PropTypes from 'prop-types';
+import {authenticateUser} from '../actions/auth';
+import { getAuthTokenFromLocalStorage } from '../helpers/utils';
+
+
+const PrivateRoute = (privateRouteProps) => {
+  const { isLoggedIn, path, component: Component } = privateRouteProps;
+
+  return (
+    <Route
+      path={path}
+      render={(props) => {
+        return isLoggedIn ? (
+          <Component {...props} />
+        ) : (
+          <Redirect
+            to={{
+              pathname: '/login',
+              state: {
+                from: props.location,
+              },
+            }}
+          />
+        );
+      }}
+    />
+  );
+};
+
 
 
 class App extends React.Component {
+
+  componentDidMount() {
+    
+
+    //const {user} = this.props.auth
+    //this.props.dispatch(fetchFriends(user._id));
+
+    const token = getAuthTokenFromLocalStorage();
+
+    if (token) {
+      const user = jwtDecode(token);
+
+      console.log('user', user);
+
+      this.props.dispatch(
+        authenticateUser({
+          email: user.email,
+          _id: user._id,
+          name: user.name,
+        })
+      );
+      //const users = this.props.auth.user
+      
+    }
+  }
+
   render() {
+    const {auth} = this.props;
+    const { isLoggedIn } = this.props.auth;
+    const {user} = this.props.auth
     return (
       <Router>
       <div className="wrapper">
@@ -23,6 +82,11 @@ class App extends React.Component {
         }}/>
         <Route path ="/login" component={Login}/>
         <Route path ="/signup" component={Signup}/> 
+        <PrivateRoute
+              path="/settings"
+              component={Settings}
+              isLoggedIn={auth.isLoggedIn}
+        />
         <Route component={Page404}/>
 
       </Switch>
@@ -38,6 +102,9 @@ class App extends React.Component {
 function mapStateToProps (state){
 
   return {
+   
+    auth: state.auth,
+    profile:state.profile
 
   }
 

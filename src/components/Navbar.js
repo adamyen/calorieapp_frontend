@@ -1,21 +1,21 @@
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import React from 'react';
-// import { logoutUser } from '../actions/auth';
+import { logoutUser } from '../actions/auth';
 
 // import { searchUsers } from '../actions/search';
-// import SearchIcon from '@material-ui/icons/Search';
-// import HomeIcon from '@material-ui/icons/Home';
-// import FlagIcon from '@material-ui/icons/Flag';
-// import SubscriptionsOutlinedIcon from '@material-ui/icons/SubscriptionsOutlined';
-// import StorefrontOutlinedIcon from '@material-ui/icons/StorefrontOutlined';
-// import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
+import SearchIcon from '@material-ui/icons/Search';
+import HomeIcon from '@material-ui/icons/Home';
+import FlagIcon from '@material-ui/icons/Flag';
+import SubscriptionsOutlinedIcon from '@material-ui/icons/SubscriptionsOutlined';
+import StorefrontOutlinedIcon from '@material-ui/icons/StorefrontOutlined';
+import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
 
 class Navbar extends React.Component {
-//   logOut = () => {
-//     localStorage.removeItem('token');
-//     this.props.dispatch(logoutUser());
-//   };
+  logOut = () => {
+    localStorage.removeItem('token');
+    this.props.dispatch(logoutUser());
+  };
 
 //   handleSearch = (e) => {
 //     const searchText = e.target.value;
@@ -25,7 +25,7 @@ class Navbar extends React.Component {
 
   
   render() {
-//     const { auth, results } = this.props;
+    const { auth } = this.props;
 
     return (
       
@@ -69,26 +69,27 @@ class Navbar extends React.Component {
           )} */}
         {/* </div> */}
         </div>
-        {/* <div className="header__middle">
+        {auth.isLoggedIn &&
+        <div className="header__middle" style={{marginLeft:'70px'}}>
           <div className="header__option header__option--active">
             <HomeIcon fontSize="large"/>
           </div>
           <div className="header__option">
             <FlagIcon fontSize="large"/>
-          </div> */}
-          {/* <div className="header__option">
+          </div>
+           <div className="header__option">
             <SubscriptionsOutlinedIcon fontSize="large"/>
           </div>
-          <div className="header__option">
+          {/* <div className="header__option">
             <StorefrontOutlinedIcon fontSize="large"/>
           </div>
           <div className="header__option">
             <SupervisedUserCircleIcon fontSize="large"/>
-          </div> */}
-        {/* </div> */}
+          </div>  */}
+         </div> }
         <div className="header__right">
         <div className="header__info">
-          {/* {auth.isLoggedIn && ( */}
+          {auth.isLoggedIn && (
             <div className="user">
               <Link to="/settings">
                 <img
@@ -98,27 +99,27 @@ class Navbar extends React.Component {
                   style={{marginLeft:'0px'}}
                 />
               </Link>
-              {/* <span style={{color:'gray',marginLeft:'10px',fontWeight:'bolder'}}>{auth.user.name}</span> */}
-              <span style={{color:'gray',marginLeft:'10px',fontWeight:'bolder'}}>XYZ</span>
-            </div>}
-          {/* )} */}
+              <span style={{color:'gray',marginLeft:'10px',fontWeight:'bolder'}}>{auth.user.name}</span>
+              {/* <span style={{color:'gray',marginLeft:'10px',fontWeight:'bolder'}}>XYZ</span> */}
+            </div>
+          )} 
 
           <div className="nav-links" >
             <ul>
-              {/* {!auth.isLoggedIn && ( */}
+              {!auth.isLoggedIn && (
                 <li>
                   <Link to="/login" style={{color:'gray',marginLeft:'10px',fontWeight:'bolder'}}>Login</Link>
                 </li>
-              {/* )} */}
-              }
-              {/* {auth.isLoggedIn &&  */}
-              {/* <li onClick={this.logOut} style={{color:'gray',marginLeft:'0px',fontWeight:'bolder'}}>Logout</li> */}
-              {/* } */}
-              {/* {!auth.isLoggedIn && ( */}
+              )} 
+              
+              {auth.isLoggedIn && 
+              <li onClick={this.logOut} style={{color:'gray',marginLeft:'0px',fontWeight:'bolder'}}>Logout</li> 
+               }
+              {!auth.isLoggedIn && (
                 <li>
                   <Link to="/signup" style={{color:'gray',marginLeft:'10px',fontWeight:'bolder'}} >Register</Link>
                 </li>
-              {/* )} */}
+              )}
             </ul>
           </div>
         </div>
@@ -132,13 +133,13 @@ class Navbar extends React.Component {
 //We are connecting because we want the auth state over here in the NavBar to show the login links/signup links and everything
 //We don't want to shaw Login and Sign Up links if the user is already logged in
 
-// function mapStateToProps(state) {
-//   return {
-//     auth: state.auth,
-//     results: state.search.results,
-//   };
-// }
+function mapStateToProps(state) {
+  return {
+    auth: state.auth,
+    // results: state.search.results,
+  };
+}
 
-// export default connect(mapStateToProps)(Navbar);
+export default connect(mapStateToProps)(Navbar);
 
-export default Navbar;
+
