@@ -72,10 +72,14 @@ class Navbar extends React.Component {
         {auth.isLoggedIn &&
         <div className="header__middle" style={{marginLeft:'70px'}}>
           <div className="header__option header__option--active">
+            <Link to="/">
             <HomeIcon fontSize="large"/>
+            </Link>
           </div>
           <div className="header__option">
+            <Link to="/goal">
             <FlagIcon fontSize="large"/>
+            </Link>
           </div>
            <div className="header__option">
             <SubscriptionsOutlinedIcon fontSize="large"/>

@@ -6,7 +6,7 @@ import jwtDecode from 'jwt-decode';
 
 import {BrowserRouter as Router,Link,Route, Switch,Redirect} from 'react-router-dom';
 
-import {Home, Page404,Navbar, Login,Signup,Settings} from './';
+import {Home, Page404,Navbar, Login,Signup,Settings,Goal} from './';
 import PropTypes from 'prop-types';
 import {authenticateUser} from '../actions/auth';
 import { getAuthTokenFromLocalStorage } from '../helpers/utils';
@@ -87,6 +87,12 @@ class App extends React.Component {
               component={Settings}
               isLoggedIn={auth.isLoggedIn}
         />
+        <PrivateRoute
+              path="/goal"
+              component={Goal}
+              isLoggedIn={auth.isLoggedIn}
+        />
+        
         <Route component={Page404}/>
 
       </Switch>

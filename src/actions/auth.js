@@ -150,7 +150,7 @@ export function editUserFailed(error) {
   };
 }
 
-export function editUser(name,password,confirmPassword, userId) {
+export function editUser(height,weight,goal,target,userId) {
 
   return (dispatch) => {
 
@@ -163,10 +163,11 @@ export function editUser(name,password,confirmPassword, userId) {
         //'Authorization': `Bearer ${getAuthTokenFromLocalStorage()}`
       },
       body: getFormBody({
-        name,
-        password,
-        confirm_password: confirmPassword,
-        id: userId,
+        height,
+        weight,
+        goal,
+        target,
+        id: userId
       }),
 
     })

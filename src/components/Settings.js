@@ -7,9 +7,10 @@ class Settings extends Component {
     super(props);
 
     this.state = {
-      name: props.auth.user.name,
-      password: '',
-      confirmPassword: '',
+      height: '',
+      weight:'',
+      goal:'',
+      target:'',
       editMode: false,
     };
   }
@@ -24,11 +25,11 @@ class Settings extends Component {
   
   handleSave = () => {
 
-    const {password, confirmPassword, name} = this.state;
+    const {height, weight, goal, target} = this.state;
 
     const {user} = this.props.auth;
 
-    this.props.dispatch(editUser(name,password,confirmPassword,user._id))
+    this.props.dispatch(editUser(height,weight,goal,target,user._id))
 
   }
 
@@ -38,6 +39,7 @@ class Settings extends Component {
   render() {
     const { user,error } = this.props.auth;
     const { editMode } = this.state;
+    console.log('wewewwewew',user.weight)
 
     return (
       <div className="settings">
@@ -56,20 +58,70 @@ class Settings extends Component {
           <div className="field-value">{user.email}</div>
         </div>
 
-        <div className="field">
+         <div className="field">
           <div className="field-label">Name</div>
+          
+            <div className="field-value">{user.name}</div>
+          
+        </div>
+
+        <div className="field">
+          <div className="field-label">Height</div>
           {editMode ? (
             <input
               type="text"
-              onChange={(e) => this.handleChange('name',e.target.value)}
-              value={this.state.name}
+              onChange={(e) => this.handleChange('height',e.target.value)}
+              value={this.state.height}
             />
           ) : (
-            <div className="field-value">{user.name}</div>
+            <div className="field-value">{user.height}</div>
           )}
         </div>
 
-        {editMode && (
+        <div className="field">
+          <div className="field-label">Weight</div>
+          {editMode ? (
+            <input
+              type="text"
+              onChange={(e) => this.handleChange('weight',e.target.value)}
+              value={this.state.weight}
+            />
+          ) : (
+            
+            <div className="field-value">{user.weight}</div>
+          )}
+        </div>
+
+        <div className="field">
+          <div className="field-label">Goal</div>
+          {editMode ? (
+            <input
+              type="text"
+              onChange={(e) => this.handleChange('goal',e.target.value)}
+              value={this.state.goal}
+            />
+          ) : (
+            
+            <div className="field-value">{user.goal}</div>
+          )}
+        </div>
+
+        <div className="field">
+          <div className="field-label">Target Weight</div>
+          {editMode ? (
+            <input
+              type="text"
+              onChange={(e) => this.handleChange('target',e.target.value)}
+              value={this.state.target}
+            />
+          ) : (
+            
+            <div className="field-value">{user.target}</div>
+          )}
+        </div>
+
+
+        {/* {editMode && (
           <div className="field">
             <div className="field-label">New Password</div>
             <input
@@ -89,7 +141,7 @@ class Settings extends Component {
               value={this.state.confirmPassword}
             />
           </div>
-        )}
+        )} */}
 
         <div className="btn-grp">
             {editMode ? <button className="button save-btn" onClick={this.handleSave} >Save</button> :
