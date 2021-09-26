@@ -36,6 +36,7 @@ class Settings extends Component {
   componentWillUnmount(){
       this.props.dispatch(clearAuthState())
   }
+
   render() {
     const { user,error } = this.props.auth;
     const { editMode } = this.state;
