@@ -3,7 +3,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { connect } from 'react-redux';
 import {getHistory,clearHistoryState} from '../actions/history';
-import Widgets1 from './Widgets1.js'
+import Widgets1 from './Widgets.js'
 
 class History extends Component {
     constructor(props) {
@@ -32,29 +32,33 @@ class History extends Component {
     
     render() {
         const {history} = this.props.history;
+        const {error} = this.props.auth;
         return (
             <div>
-                This is History
+                <div className="goal-form" style={{width:'600px',height:'400px',marginLeft:'100px'}} >
+                <span className="login-signup-header">History</span>
+                {error && <div className="alert error-dailog">{error}</div>}
                 <div>
                  <DatePicker selected={this.state.date} onChange={date => this.setState({date})} maxDate={new Date()}/>
                 </div>
-                <div className="btn-grp">
+                <div className="field">
         <button className="button save-btn" onClick={this.handleSave} >Check</button>
         </div>
         <div>
+        </div>
             
-            Date......{this.state.date.toString().slice(0,10)}
+            {/* Date......{this.state.date.toString().slice(0,10)}
             
             <div>
                 History..........{history._id}
             </div>
             <div>
                 History..........{history.caloriesgain}
-            </div>
+            </div> */}
             
             
         </div>
-        <Widgets1/>
+        <Widgets1 />
 
             </div>
         );

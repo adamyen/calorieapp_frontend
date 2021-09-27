@@ -99,7 +99,7 @@ class Goal extends Component {
         return (
             <div>
                 
-           <form className="login-form" style={{width:'600px',height:'400px',marginLeft:'100px'}} >
+           <div className="goal-form" style={{width:'600px',height:'400px',marginLeft:'100px'}} >
            <span className="login-signup-header">Today's Calories</span>
             {error && <div className="alert error-dailog">{error}</div>}
             <div className="field">
@@ -112,7 +112,7 @@ class Goal extends Component {
             {/* <SearchIcon/> */}
           <input placeholder="Select Food" onChange={this.handleSearch} />
           {results.length > 0 && (
-            <div className="search-results" style={{marginTop:'282px',width:'345px'}}>
+            <div className="search-results" style={{marginTop:'305px',width:'345px'}}>
               <ul>
                 {results.slice(0,5).map((user) => (
                   <li className="search-results-row" key={user._id} onClick={this.clearSearch}>
@@ -152,7 +152,7 @@ class Goal extends Component {
         </div>
         
 
-        </form>
+        </div>
         <div className="home__section" style={{width:'600px',marginLeft:'70px',marginTop:'-70px'}}>
                 {/* <Card1 src="/images/R52.jpg" title="Summary" description=''/> */}
                 <div className='card'>

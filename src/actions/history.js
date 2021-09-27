@@ -98,8 +98,9 @@ export function getHistory(date,userId){
     };
   }
 
-  export function clearHistoryState () {
+  export function clearHistoryState (history) {
     return {  
-      type: CLEAR_HISTORY_STATE
+      type: CLEAR_HISTORY_STATE,
+      history
     }
   }

@@ -10,7 +10,8 @@ export default function history(state= initialHistoryState, action){
         case CLEAR_HISTORY_STATE:
       return {
         ...state,
-        error:null
+        error:null,
+        history:action.history
       }
 
         case GET_HISTORY_SUCCESSFULL:
