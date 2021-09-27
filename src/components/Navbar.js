@@ -82,7 +82,9 @@ class Navbar extends React.Component {
             </Link>
           </div>
            <div className="header__option">
+             <Link to="/history">
             <SubscriptionsOutlinedIcon fontSize="large"/>
+            </Link>
           </div>
           {/* <div className="header__option">
             <StorefrontOutlinedIcon fontSize="large"/>

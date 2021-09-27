@@ -77,7 +77,7 @@ class Goal extends Component {
 
     const {user} = this.props.auth;
 
-    this.props.dispatch(editHistory(date.toString().slice(0,10).split(' '),total,burnout,user._id))
+    this.props.dispatch(editHistory(date.toString().slice(0,10),total,burnout,user._id))
 
   }
 
@@ -142,7 +142,7 @@ class Goal extends Component {
         </div>
         <div>
             
-            Date......{this.state.date.toString().slice(0,10).split(' ')}
+            Date......{this.state.date.toString().slice(0,10)}
         </div>
         <div>
             Total BurnOut......{this.state.burnout}

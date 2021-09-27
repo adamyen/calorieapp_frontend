@@ -9,6 +9,7 @@ const initialAuthState = {
 };
 
 export default function auth(state = initialAuthState, action) {
+  
   switch (action.type) {
     case CLEAR_AUTH_STATE:
       return {

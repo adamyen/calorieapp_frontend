@@ -6,6 +6,7 @@ import Signup from './Signup';
 import Settings from './Settings';
 import Itembox from './Itembox';
 import Goal from './Goal';
+import History from './History';
 
 
-export {Home, Page404,Navbar, Login,Signup,Settings,Itembox,Goal}
+export {Home, Page404,Navbar, Login,Signup,Settings,Itembox,Goal,History}
