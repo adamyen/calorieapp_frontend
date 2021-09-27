@@ -3,6 +3,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { connect } from 'react-redux';
 import {getHistory,clearHistoryState} from '../actions/history';
+import Widgets1 from './Widgets1.js'
 
 class History extends Component {
     constructor(props) {
@@ -53,6 +54,7 @@ class History extends Component {
             
             
         </div>
+        <Widgets1/>
 
             </div>
         );

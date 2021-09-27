@@ -8,5 +8,8 @@ import Itembox from './Itembox';
 import Goal from './Goal';
 import History from './History';
 
+import Card1 from './Card1';
 
-export {Home, Page404,Navbar, Login,Signup,Settings,Itembox,Goal,History}
+
+
+export {Home, Page404,Navbar, Login,Signup,Settings,Itembox,Goal,History,Card1}
