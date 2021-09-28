@@ -1,4 +1,5 @@
-<a href="https://doi.org/10.5281/zenodo.5534872"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5534872.svg" alt="DOI"></a> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<a href="https://doi.org/10.5281/zenodo.5534872"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5534872.svg" alt="DOI"></a> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white  https://img.shields.io/github/commits-since/{username}/{repo-name}/{version}.svg
+	https://img.shields.io/github/issues/{username}/{repo-name}.svg https://img.shields.io/github/issues-closed/{username}/{repo-name}.svg
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
