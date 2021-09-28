@@ -1,4 +1,4 @@
-https://zenodo.org/badge/DOI/10.5281/zenodo.5534872.svg
+<a href="https://doi.org/10.5281/zenodo.5534872"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5534872.svg" alt="DOI"></a>
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
