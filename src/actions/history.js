@@ -98,9 +98,11 @@ export function getHistory(date,userId){
     };
   }
 
-  export function clearHistoryState (history) {
+  export function clearHistoryState (history,caloriesgain,caloriesburn) {
     return {  
       type: CLEAR_HISTORY_STATE,
-      history
+      history,
+      caloriesgain,
+      caloriesburn
     }
   }

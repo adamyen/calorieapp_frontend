@@ -2,6 +2,8 @@ import {  GET_HISTORY_SUCCESSFULL ,GET_HISTORY_FAILED,CLEAR_HISTORY_STATE } from
 
 const initialHistoryState = {
     history: [],
+    caloriesgain:0,
+    caloriesburn:0
 }
 
 export default function history(state= initialHistoryState, action){
@@ -11,13 +13,18 @@ export default function history(state= initialHistoryState, action){
       return {
         ...state,
         error:null,
-        history:action.history
+        history:action.history,
+        caloriesgain:action.history.caloriesgain,
+        caloriesburn:action.history.caloriesburn
+        
       }
 
         case GET_HISTORY_SUCCESSFULL:
             return {
                 ...state,
-                history: action.history
+                history: action.history,
+                caloriesgain:action.history.caloriesgain,
+                caloriesburn:action.history.caloriesburn
             }
 
         case GET_HISTORY_FAILED:
