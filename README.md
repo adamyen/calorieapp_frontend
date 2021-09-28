@@ -1,3 +1,4 @@
+https://zenodo.org/badge/DOI/10.5281/zenodo.5534872.svg
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
