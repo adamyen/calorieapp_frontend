@@ -30,7 +30,7 @@ https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows
 Download and Install node using the below link:
 https://nodejs.org/en/download/
 
-Open Visual studio code.\
+Open Visual studio code.
 Install nodemon and React using the below commands in terminal:
 ### npm install nodemon
 ### npm install react
