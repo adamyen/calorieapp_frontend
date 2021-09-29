@@ -24,10 +24,10 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
  ![User](https://user-images.githubusercontent.com/25662536/135188482-8a80702e-3405-479a-be9f-3fa5cb249a9f.gif)
 
 # Steps for Execution:
-Install mongo using the below link:
+Install MongoDB using the below link:
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows
 
-Download and Install node using the below link:
+Download and install Node js using the below link:
 https://nodejs.org/en/download/
 
 Open Visual studio code.
@@ -40,12 +40,10 @@ In the terminal clone the frontend project using following commands:
 Open new console and clone the backend part:
 ### git clone https://github.com/shantanu109/calorieApp_server.git
 
-Then enter below command for both the terminals to start the app:
+Then enter below command for both the terminals to start the application:
 ### npm start
 
-# Helping commands for React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Additional commands for React App
 
 ## Available Scripts
 
@@ -74,28 +72,20 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 
 ## FUTURE SCOPE
+#### The below points can be implemented in the future scope of this application:
 
-Integrate Machine Learning Model with Application to predict the journey to goal and guide the user to it based on previous history.
+-Integrate Machine Learning Model with Application to predict the journey to goal and guide the user to it based on previous history.
 
-Incorporate Field Validations.
+-Incorporate Field Validations.
 
-Provide/Create separte pages for tabs displayed on HomePage.
+-Provide/Create separte pages for tabs displayed on HomePage.
 
-Creating pages for Meal and Workout plan.
+-Creating pages for Meal and Workout plan.
 
-Extend the analysis to the Facebook, Twitter and LinkedIn Posts
+-Extend the analysis to the Facebook, Twitter and LinkedIn Posts
 
 ## Team Members
 
