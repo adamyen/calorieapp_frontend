@@ -7,7 +7,6 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
 
 # Technologies Used
  -React
- 
  -Redux
  
  -Node.js
