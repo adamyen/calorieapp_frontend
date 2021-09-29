@@ -74,8 +74,8 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 
-## FUTURE SCOPE
-#### The below points can be implemented in the future scope of this application:
+## Future Scope
+### The below points can be implemented in the future scope of this application:
 
 -Integrate Machine Learning Model with Application to predict the journey to goal and guide the user to it based on previous history.
 
