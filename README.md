@@ -23,7 +23,7 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
  ## Set User Profile
  ![User](https://user-images.githubusercontent.com/25662536/135188482-8a80702e-3405-479a-be9f-3fa5cb249a9f.gif)
 
-# Steps to run the BurnOut App:
+# Steps for Execution:
 Install mongo using the below link:
 https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows
 
@@ -43,7 +43,7 @@ Open new console and clone the backend part:
 Then enter below command for both the terminals to start the app:
 ### npm start
 
-# Getting Started with Create React App
+# Helping commands for React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
