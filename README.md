@@ -37,7 +37,7 @@ Install nodemon and React using the below commands in terminal:
 
 In the terminal clone the frontend project using following commands:
 ### git clone https://github.com/shantanu109/calorieapp_frontend.git
-Open new console and clone the backend part:\
+Open new console and clone the backend part:
 ### git clone https://github.com/shantanu109/calorieApp_server.git
 
 Then enter below command for both the terminals to start the app:
