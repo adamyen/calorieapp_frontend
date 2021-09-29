@@ -81,12 +81,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 -Incorporate Field Validations.
 
--Provide/Create separte pages for tabs displayed on HomePage.
+-Provide/Create separate pages for the tabs displayed on HomePage.
 
 -Creating pages for Meal and Workout plan.
 
--Extend the analysis to the Facebook, Twitter and LinkedIn Posts
-
+-Create a mobile application for the web version of the application.
 ## Team Members
 
 Shantanu Pandey(spandey4@ncsu.edu)
