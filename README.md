@@ -97,7 +97,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## FUTURE SCOPE
 
-Integrate Machine Learning Model with Application to predict and guide user based on previous history.
+Integrate Machine Learning Model with Application to predict the journey to goal and guide the user to it based on previous history.
 
 Incorporate Field Validations.
 
