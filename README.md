@@ -11,7 +11,8 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
  -Node.js\
  -Express.js\
  -MongoDB\
- -REST API
+ -REST API\
+ -Python - ML
  
  ## Register
 ![Register](https://user-images.githubusercontent.com/25662536/135187412-1e4faefa-af1c-47ab-9b5f-4328f061e55d.gif)
