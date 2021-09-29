@@ -25,22 +25,22 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
 
 # Steps to run the BurnOut App:
 Install mongo using the below link:
-https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows\
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows
 
-Download and Install node using the below link:\
+Download and Install node using the below link:
 https://nodejs.org/en/download/
 
 Open Visual studio code./
-Install nodemon and React using the below commands in terminal:\
+Install nodemon and React using the below commands in terminal:
 ### npm install nodemon
 ### npm install react
 
-In the terminal clone the frontend project using following commands:\
+In the terminal clone the frontend project using following commands:
 ### git clone https://github.com/shantanu109/calorieapp_frontend.git
 Open new console and clone the backend part:\\
-### git clone https://github.com/shantanu109/calorieApp_server.git\
+### git clone https://github.com/shantanu109/calorieApp_server.git
 
-Then enter below command for both the terminals to start the app:\
+Then enter below command for both the terminals to start the app:
 ### npm start
 
 # Getting Started with Create React App
