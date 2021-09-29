@@ -1,6 +1,6 @@
 # Contributing to BurnOut!!
 
-The following is a set of guidelines for contributing to SE Group 28
+The following is a set of guidelines for contributing to BurnOut. We are open to suggestions to enhance our project.
 
 ## Table of Contents:
 
