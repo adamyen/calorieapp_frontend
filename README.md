@@ -91,6 +91,18 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+## FUTURE SCOPE
+
+Integrate Machine Learning Model with Application to predict and guide user based on previous history.
+
+Incorporate Field Validations.
+
+Provide/Create separte pages for tabs displayed on HomePage.
+
+Creating pages for Meal and Workout plan.
+
+Extend the analysis to the Facebook, Twitter and LinkedIn Posts
+
 ## Team Members
 
 Shantanu Pandey(spandey4@ncsu.edu)
