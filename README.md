@@ -26,29 +26,26 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
  ![User](https://user-images.githubusercontent.com/25662536/135188482-8a80702e-3405-479a-be9f-3fa5cb249a9f.gif)
 
 # Steps for Execution:
-Install MongoDB using the below link:
-https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows
+ - Install MongoDB using the below link:
+<a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows">MongoDB</a>
 
-Download and install Node js using the below link:
-https://nodejs.org/en/download/
+ - Download and install Node js using the below link:
+<a href="https://nodejs.org/en/download/">NodeJs</a>
 
-Open Visual studio code.
-Install nodemon and React using the below commands in terminal:
-#### `npm install nodemon`
-#### `npm install react`
-
-In the terminal clone the frontend project using following commands:
+ - In the command prompt clone the frontend project using following commands:
 #### `git clone https://github.com/shantanu109/calorieapp_frontend.git`
-Open new console and clone the backend part:
+ - Open new console and clone the backend part:
 #### `git clone https://github.com/shantanu109/calorieApp_server.git`
 
-Then enter below command for both the terminals to start the application:
-#### `npm start`
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ - Then enter
+ #### `npm install`
+ to install all the required dependencies in both the terminal. The dependencies have been mentioned in the 'package.json' file.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+ - Then enter below command for both the terminals to start the application:
+#### `npm start`
+
+ - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 
 # Additional commands for React App
 
