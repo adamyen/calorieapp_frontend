@@ -29,12 +29,9 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
  ![datevsweight](https://user-images.githubusercontent.com/89487138/135519908-74894e53-c8a7-423a-af1e-66bfcf5cd1de.png)
 
 # Steps for Execution:
- - Install MongoDB using the below link:
-<a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows">MongoDB</a>
-
- - Download and install Node js using the below link:
-<a href="https://nodejs.org/en/download/">NodeJs</a>
-
+ - Install [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows)
+ - Download and install [NodeJs](https://nodejs.org/en/download/)
+ 
  - In the command prompt clone the frontend project using following commands:
 #### `git clone https://github.com/shantanu109/calorieapp_frontend.git`
  - Open new console and clone the backend part:
