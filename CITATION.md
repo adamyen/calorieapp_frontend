@@ -5,7 +5,7 @@
 Link to frontend repository: https://github.com/shantanu109/calorieapp_frontend \
 Link to backend repository: https://github.com/shantanu109/calorieApp_server
 
-# Authors
+### Authors
 
  - Shantanu Pandey(spandey4@ncsu.edu)
 
@@ -17,4 +17,4 @@ Link to backend repository: https://github.com/shantanu109/calorieApp_server
 
  - Urmi Pathak(upathak@ncsu.edu)
 
-License: MIT
+## License: MIT
