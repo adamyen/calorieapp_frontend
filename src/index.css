@@ -478,8 +478,8 @@ nav .nav-links ul li:hover {
   outline: none;
 }
 .field2 button {
-  width: 100%;
-  margin-top: 20px;
+  /* width: 100%; */
+  /* margin-top: 20px; */
   
   border-radius: 2px;
   color: #fff;

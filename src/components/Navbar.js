@@ -36,7 +36,7 @@ class Navbar extends React.Component {
             // http://ninjasfiles.s3.amazonaws.com/0000000000003454.png
             //   src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1200px-Facebook_f_logo_%282019%29.svg.png"
               alt="logo"
-              src="/images/cult_logo_2.png"
+              src="/images/burnlogo2.jpeg"
               style={{height:'50px'}}
 
             />
@@ -71,17 +71,17 @@ class Navbar extends React.Component {
         </div>
         {auth.isLoggedIn &&
         <div className="header__middle" style={{marginLeft:'70px'}}>
-          <div className="header__option header__option--active">
+          <div className="header__option ">
             <Link to="/">
             <HomeIcon fontSize="large"/>
             </Link>
           </div>
-          <div className="header__option">
+          <div className="header__option ">
             <Link to="/goal">
             <FlagIcon fontSize="large"/>
             </Link>
           </div>
-           <div className="header__option">
+           <div className="header__option ">
              <Link to="/history">
             <SubscriptionsOutlinedIcon fontSize="large"/>
             </Link>

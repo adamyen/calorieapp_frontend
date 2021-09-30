@@ -73,6 +73,7 @@ class Settings extends Component {
               type="text"
               onChange={(e) => this.handleChange('height',e.target.value)}
               value={this.state.height}
+              placeholder='cm'
             />
           ) : (
             <div className="field-value">{user.height}</div>
@@ -86,6 +87,7 @@ class Settings extends Component {
               type="text"
               onChange={(e) => this.handleChange('weight',e.target.value)}
               value={this.state.weight}
+              placeholder='kg'
             />
           ) : (
             
@@ -100,6 +102,7 @@ class Settings extends Component {
               type="text"
               onChange={(e) => this.handleChange('goal',e.target.value)}
               value={this.state.goal}
+              placeholder='weight gain / weight loss'
             />
           ) : (
             
@@ -114,6 +117,7 @@ class Settings extends Component {
               type="text"
               onChange={(e) => this.handleChange('target',e.target.value)}
               value={this.state.target}
+              placeholder='kg'
             />
           ) : (
             
