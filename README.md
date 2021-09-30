@@ -25,6 +25,9 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
  ## Set User Profile
  ![User](https://user-images.githubusercontent.com/25662536/135188482-8a80702e-3405-479a-be9f-3fa5cb249a9f.gif)
 
+ ## User History Plot
+ ![dateVsweight](https://user-images.githubusercontent.com/89487138/135519479-c4d115f1-1787-4c73-bf48-06d2ec76cbe6.png)
+
 # Steps for Execution:
  - Install MongoDB using the below link:
 <a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows">MongoDB</a>
