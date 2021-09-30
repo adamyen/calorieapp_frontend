@@ -6,12 +6,12 @@
 BurnOut is an easy to use application that keeps track of a user's daily calories gained and burnt. It can help the user to set goals such as weight loss/gain. User can edit his profile to enter weight, height and goal. This document provides a major perspective for the users to understand and take up the project as an Open source software and add on multiple features before releasing to the market. Also, the document aids the developers in understanding the code and acts as a reference point for continuing the project. 
 
 # Technologies Used:
- - React\
- - Redux\
- - Node.js\
- - Express.js\
- - MongoDB\
- - REST API\
+ - React
+ - Redux
+ - Node.js
+ - Express.js
+ - MongoDB
+ - REST API
  - Python - ML
  
  # Core Functionalities:
@@ -34,16 +34,16 @@ https://nodejs.org/en/download/
 
 Open Visual studio code.
 Install nodemon and React using the below commands in terminal:
-### `npm install nodemon`
-### `npm install react`
+#### `npm install nodemon`
+#### `npm install react`
 
 In the terminal clone the frontend project using following commands:
-### `git clone https://github.com/shantanu109/calorieapp_frontend.git`
+#### `git clone https://github.com/shantanu109/calorieapp_frontend.git`
 Open new console and clone the backend part:
-### `git clone https://github.com/shantanu109/calorieApp_server.git`
+#### `git clone https://github.com/shantanu109/calorieApp_server.git`
 
 Then enter below command for both the terminals to start the application:
-### `npm start`
+#### `npm start`
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
