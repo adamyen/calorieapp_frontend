@@ -78,8 +78,9 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 
 
-## Future Scope
-### The below points can be implemented in the future scope of this application:
+# Future Scope
+
+## The below points can be implemented in the future scope of this application:
 
  - Integrate Machine Learning Model with Application to predict the journey to goal and guide the user to it based on previous history.
 
@@ -91,7 +92,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
  - Create a mobile application for the web version of the application.
  
-## Team Members
+# Team Members
 
  - Shantanu Pandey(spandey4@ncsu.edu)
 
@@ -102,3 +103,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
  - Varun Garg(vgarg4@ncsu.edu)
 
  - Urmi Kashyap Pathak(upathak@ncsu.edu)
+
+# Contribution
+
+Please see the CONTRIBUTING.md for instructions on how to contribute to our repository.
+
+# License
+
+This project is licensed under the MIT License.
