@@ -2,9 +2,7 @@
 [![GitHub commits](https://badgen.net/github/last-commit/pncnmnp/SE21-project)](https://https://github.com/shantanu109/calorieapp_frontend/)
 [![Repo-size](https://img.shields.io/github/repo-size/pncnmnp/SE21-project)](https://GitHub.com/shantanu109/calorieapp_frontend/)
 [![file_count](https://img.shields.io/github/directory-file-count/pncnmnp/SE21-project)](https://GitHub.com/shantanu109/calorieapp_frontend/)
-[![language_count](https://img.shields.io/github/languages/count/pncnmnp/SE21-project)](https://GitHub.com/shantanu109/calorieapp_frontend/)
-
-<a href="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" ><img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"></a>  <a href="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" ><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"></a>     <a href="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" ><img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"></a> <a href="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"  ><img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"></a>   
+[![language_count](https://img.shields.io/github/languages/count/pncnmnp/SE21-project)](https://GitHub.com/shantanu109/calorieapp_frontend/)  
 
 # BurnOut
 BurnOut is an easy to use application that keeps track of a user's daily calories gained and burnt. It can help the user to set goals such as weight loss/gain. User can edit his profile to enter weight, height and goal. This document provides a major perspective for the users to understand and take up the project as an Open source software and add on multiple features before releasing to the market. Also, the document aids the developers in understanding the code and acts as a reference point for continuing the project. 
