@@ -1,9 +1,51 @@
 <a href="https://doi.org/10.5281/zenodo.5534872"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5534872.svg" alt="DOI"></a> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) <a href="https://img.shields.io/github/commits-since/shantanu109/calorieapp_frontend/1.0.0.svg" ><img src="https://img.shields.io/github/commits-since/shantanu109/calorieapp_frontend/1.0.0.svg"></a>   <a href="https://img.shields.io/github/issues/shantanu109/calorieapp_frontend.svg" ><img src="https://img.shields.io/github/issues/shantanu109/calorieapp_frontend.svg"></a>  <a href="https://img.shields.io/github/issues-closed/shantanu109/calorieapp_frontend.svg"><img src="https://img.shields.io/github/issues-closed/shantanu109/calorieapp_frontend.svg"></a> 
 
 <a href="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" ><img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"></a>  <a href="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" ><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"></a>     <a href="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" ><img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"></a> <a href="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"  ><img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"></a>   
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# BurnOut
+BurnOut is an easy to use application that keeps track of a user's daily calories gained and burnt. It can help the user to set goals such as weight loss/gain. User can edit his profile to enter weight, height and goal. This document provides a major perspective for the users to understand and take up the project as an Open source software and add on multiple features before releasing to the market. Also, the document aids the developers in understanding the code and acts as a reference point for continuing the project. 
+
+# Technologies Used:
+ -React\
+ -Redux\
+ -Node.js\
+ -Express.js\
+ -MongoDB\
+ -REST API\
+ -Python - ML
+ 
+ # Core Functionalities:
+ 
+ ## Register
+![register2](https://user-images.githubusercontent.com/25662536/135362555-0b318a15-6055-46b1-9a68-fdb6347341b5.gif)
+
+ ## Login
+ ![ezgif-1-59cd384ca962](https://user-images.githubusercontent.com/25662536/135186441-62458bc0-72ff-41b5-84d4-39b4e8985b71.gif)
+ 
+ ## Set User Profile
+ ![User](https://user-images.githubusercontent.com/25662536/135188482-8a80702e-3405-479a-be9f-3fa5cb249a9f.gif)
+
+# Steps for Execution:
+Install MongoDB using the below link:
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows
+
+Download and install Node js using the below link:
+https://nodejs.org/en/download/
+
+Open Visual studio code.
+Install nodemon and React using the below commands in terminal:
+### npm install nodemon
+### npm install react
+
+In the terminal clone the frontend project using following commands:
+### git clone https://github.com/shantanu109/calorieapp_frontend.git
+Open new console and clone the backend part:
+### git clone https://github.com/shantanu109/calorieApp_server.git
+
+Then enter below command for both the terminals to start the application:
+### npm start
+
+# Additional commands for React App
 
 ## Available Scripts
 
@@ -32,42 +74,28 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Future Scope
+### The below points can be implemented in the future scope of this application:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+-Integrate Machine Learning Model with Application to predict the journey to goal and guide the user to it based on previous history.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+-Incorporate Field Validations.
 
-## Learn More
+-Provide/Create separate pages for the tabs displayed on HomePage.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+-Creating pages for Meal and Workout plan.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+-Create a mobile application for the web version of the application.
+## Team Members
 
-### Code Splitting
+Shantanu Pandey(spandey4@ncsu.edu)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Sahil Rajesh Nande(snande@ncsu.edu)
 
-### Analyzing the Bundle Size
+Leanne Serrao(lserrao@ncsu.edu)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Varun Garg(vgarg4@ncsu.edu)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Urmi Pathak(upathak@ncsu.edu)
