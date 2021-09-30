@@ -96,4 +96,4 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
  - Varun Garg(vgarg4@ncsu.edu)
 
- - Urmi Pathak(upathak@ncsu.edu)
+ - Urmi Kashyap Pathak(upathak@ncsu.edu)
