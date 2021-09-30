@@ -5,6 +5,13 @@
 # BurnOut
 BurnOut is an easy to use application that keeps track of a user's daily calories gained and burnt. It can help the user to set goals such as weight loss/gain. User can edit his profile to enter weight, height and goal. This document provides a major perspective for the users to understand and take up the project as an Open source software and add on multiple features before releasing to the market. Also, the document aids the developers in understanding the code and acts as a reference point for continuing the project. 
 
+# Why use BurnOut?
+ - User can easily track their calories.
+ - User just needs to input the food they've had, calories get calculated automatically.
+ - Record of calories in and calories burn out day wise in History tab.
+ - Helps user to figure out how much to eat/exercise according to their desired goal(weight loss/gain).
+ - Easy to use application.
+
 # Technologies Used:
  - React
  - Redux
