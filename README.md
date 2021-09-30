@@ -35,6 +35,9 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
  
  ## Enter Calories in and burnt
  ![enterfood](https://user-images.githubusercontent.com/25662536/135545398-70feedb5-b82e-41d9-996e-d3902492883e.gif)
+ 
+ ## Check History
+ ![history](https://user-images.githubusercontent.com/25662536/135545802-0386c959-1bea-4b18-abae-c834862385c6.gif)
 
  ## User History Plot
  ![datevsweight](https://user-images.githubusercontent.com/89487138/135519908-74894e53-c8a7-423a-af1e-66bfcf5cd1de.png)
