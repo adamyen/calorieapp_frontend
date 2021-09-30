@@ -17,11 +17,11 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
  - Easy to use application.
 
 # Technologies Used:
- - React
- - Redux
- - Node.js
+ - <a href="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" ><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"></a>
+ -  <a href="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white" ><img src="https://img.shields.io/badge/Redux-593D88?style=for-the-badge&logo=redux&logoColor=white"></a>
+ - <a href="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" ><img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white"></a>
  - Express.js
- - MongoDB
+ - <a href="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"  ><img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"></a>   
  - REST API
  - Python - ML
  
