@@ -1,19 +1,20 @@
-FrontEnd:
-1. Authentication(svc/actions/auth.js)
-I.function Login
-Parameters:(Email, Password)
-Method: 'POST'
-Decription: Makes an API call to create a session for the user. The function receives JSON data from the server side.
+# FrontEnd:
+## 1. Authentication(svc/actions/auth.js)
+### I.Function Login
+#### Parameters:(Email, Password)
+#### Method: 'POST'
+#### Decription: Makes an API call to create a session for the user. The function receives JSON data from the server side.
 If the login is successful, the function calls "Login successful" function that updates the state of the user on client side.
 "Login Failed" function is calledif there is an error or if the credentials are invalid.
-Output:
+#### Output:
 data(token, user)
-message:sign in successful
+#### message:sign in successful
 success:True/False
 
-II. Function SignUp
-Parameters: Email, password, confirm Password, name
-Method: "Post"
+### II. Function SignUp
+#### Parameters: Email, password, confirm Password, name
+#### Method: "Post"
+#### Description:
 Create a user. The server side checks the conditions.
 a.Password & Confirm Password matches.
 b.If a user already exists with the same email. If user already exists, it returns the user.
@@ -21,29 +22,39 @@ c.Creates a new user if there is not a user with the same email in DB.
 
 The function updates the state of the user on client side on success.
 
-III. Function Edit User Profile
-Parmaters: height, wieght, goal. target, userID
-Method: "Post"
-Description: Finds the user inside the database & updates its height, weight, goal, Target, userID
-Output: #updated user data
+### III. Function Edit User Profile
+#### Parmaters: 
+height, wieght, goal. target, userID
+#### Method: "Post"
+#### Description: 
+Finds the user inside the database & updates its height, weight, goal, Target, userID
+#### Output: 
+#updated user data
 data{token, user}
 
-IV. Function addTotal
-Parameters: total
-description: Updates the total calories state of the user on the client side
-output: Updated total calories state
+### IV. Function addTotal
+#### Parameters: 
+total
+#### Description: 
+Updates the total calories state of the user on the client side
+#### Output: 
+Updated total calories state
 
-V. Function getHistory
-Parameters: date, UserID
-Method:'GET'
-Description: Function makes an API call to get user's calories data for a specific date.
-Output: 
+### V. Function getHistory
+#### Parameters: 
+date, UserID
+#### Method:
+'GET'
+#### Description:
+Function makes an API call to get user's calories data for a specific date.
+#### Output: 
 Receives JSON data
-message: history:history
+#### Message: 
+history:history
 success: true
 
-VI. Function edit History
-Parameters- date, total, burnout, userID
+### VI. Function edit History
+#### Parameters- date, total, burnout, userID
 Description: Function makes an API call with users calories information for the date & adds it the database.
 Output:
 Message: {"History created successfully"
