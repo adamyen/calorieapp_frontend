@@ -27,6 +27,7 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
 - [Team Members](#team-members)
 - [Contribution](#contribution)
 - [License](#license)
+- [Support](#support)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -144,3 +145,7 @@ Please see the CONTRIBUTING.md for instructions on how to contribute to our repo
 # License
 
 This project is licensed under the MIT License.
+
+# Support
+
+For additional support or inquiries, please contact at burnoutsoftware@gmail.com
