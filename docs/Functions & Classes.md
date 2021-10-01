@@ -1,6 +1,6 @@
 # FrontEnd:
 ## 1. Authentication(src/actions/auth.js)
-### I.Function Login
+### I. Function Login
 #### Parameters:(Email, Password)
 #### Method: 'POST'
 #### Decription: Makes an API call to create a session for the user. The function receives JSON data from the server side.
