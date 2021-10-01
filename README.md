@@ -65,6 +65,12 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
  ![history](https://user-images.githubusercontent.com/25662536/135545802-0386c959-1bea-4b18-abae-c834862385c6.gif)
 
  ## User History Plot
+ We have used python in the backend to track the weight history of a person. We will be deploying a machine learning model to predict the number of days required to achieve his goal in the future scope.
+  This is how to python file works:
+  1.	The data is fetched from MongoDB using the python pymongo library.
+  2.	Fetched data is converted into Pythons Panda Dataframe locally to train the prediction model locally.
+  3.	Weight History line plot for ease in tracking.
+
  ![datevsweight](https://user-images.githubusercontent.com/89487138/135519908-74894e53-c8a7-423a-af1e-66bfcf5cd1de.png)
 
 # Steps for Execution:
