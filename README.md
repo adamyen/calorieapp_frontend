@@ -5,6 +5,28 @@
 
 ![WhatsApp Image 2021-09-28 at 2 48 00 PM](https://user-images.githubusercontent.com/25662536/135546154-cfae1d2e-439a-4edc-b0bb-57f693ef5a83.jpeg)
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Why use BurnOut?](#why-use-burnout)
+- [Technologies Used:](#technologies-used)
+- [Steps for Execution:](#steps-for-execution)
+      - [`git clone https://github.com/shantanu109/calorieapp_frontend.git`](#git-clone-httpsgithubcomshantanu109calorieapp_frontendgit)
+      - [`git clone https://github.com/shantanu109/calorieApp_server.git`](#git-clone-httpsgithubcomshantanu109calorieapp_servergit)
+      - [`npm start`](#npm-start)
+- [Additional commands for React App](#additional-commands-for-react-app)
+  - [Available Scripts](#available-scripts)
+      - [`npm test`](#npm-test)
+      - [`npm run build`](#npm-run-build)
+- [Future Scope](#future-scope)
+  - [The below points can be implemented in the future scope of this application:](#the-below-points-can-be-implemented-in-the-future-scope-of-this-application)
+- [Team Members](#team-members)
+- [Contribution](#contribution)
+- [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 BurnOut is an easy to use application that keeps track of a user's daily calories gained and burnt. It can help the user to set goals such as weight loss/gain. User can edit his profile to enter weight, height and goal. This document provides a major perspective for the users to understand and take up the project as an Open source software and add on multiple features before releasing to the market. Also, the document aids the developers in understanding the code and acts as a reference point for continuing the project. 
 
 # Why use BurnOut?
