@@ -77,15 +77,15 @@ success: true
 }
 
 ## Components:
-### 1.Class App - 
+### 1. Class App - 
 App component contains all the components that resides on the client side.
-### 2.Class Goal - 
+### 2. Class Goal - 
 Goal components is used to enter user's day to day calories intake and burnout
-### 3.Class History - 
+### 3. Class History - 
 History component displays the user's calories/workout information for a specific selected date.
-### 4.Class Login & Signup - 
+### 4. Class Login & Signup - 
 Both components have the functinality to register & visit the website.
-### 5.Class Navbar - 
+### 5. Class Navbar - 
 This component contains the logo, tabs to switch between components, and logged in user's Name and login/logout buttons.
-### 6.Class settings - 
+### 6. Class settings - 
 Settings component is used to update the user's height, weight, goal and target weight.
