@@ -38,6 +38,10 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
  - Helps user to figure out how much to eat/exercise according to their desired goal(weight loss/gain).
  - Easy to use application.
 
+# Implementation:
+This is the YouTube video of the implementation of the BurnOut application:
+  https://www.youtube.com/watch?v=T0mSCdH9rhU 
+
 # Technologies Used:
  - ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
  - ![Redux](https://img.shields.io/badge/redux-%23593d88.svg?style=for-the-badge&logo=redux&logoColor=white)
