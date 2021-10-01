@@ -1,5 +1,5 @@
 # FrontEnd:
-## 1. Authentication(svc/actions/auth.js)
+## 1. Authentication(src/actions/auth.js)
 ### I.Function Login
 #### Parameters:(Email, Password)
 #### Method: 'POST'
