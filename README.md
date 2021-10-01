@@ -60,7 +60,10 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
 #### `npm start`
 
  - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
+ 
+ # Source Code
+ - Link to frontend repository: https://github.com/shantanu109/calorieapp_frontend
+ - Link to backend repository: https://github.com/shantanu109/calorieApp_server
 
 # Additional commands for React App
 
