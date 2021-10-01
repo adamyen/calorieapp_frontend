@@ -14,7 +14,14 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
 - [Why use BurnOut?](#why-use-burnout)
 - [Technologies Used:](#technologies-used)
 - [Core Functionalities:](#core-functionalities)
+  - [Register](#register)
+  - [Login](#login)
+  - [Set User Profile](#set-user-profile)
+  - [Enter Calories in and burnt](#enter-calories-in-and-burnt)
+  - [Check History](#check-history)
+  - [User History Plot](#user-history-plot)
 - [Steps for Execution:](#steps-for-execution)
+- [Source Code](#source-code)
 - [Additional commands for React App](#additional-commands-for-react-app)
 - [Future Scope](#future-scope)
 - [Team Members](#team-members)
@@ -69,7 +76,7 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
 #### `git clone https://github.com/shantanu109/calorieApp_server.git`
 
  - Then enter
- #### `npm install`
+#### `npm install`
  to install all the required dependencies in both the terminal. The dependencies have been mentioned in the 'package.json' file.
 
  - Then enter below command for both the terminals to start the application:
@@ -77,7 +84,7 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
 
  - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
  
- # Source Code
+# Source Code
  - Link to frontend repository: https://github.com/shantanu109/calorieapp_frontend
  - Link to backend repository: https://github.com/shantanu109/calorieApp_server
 
