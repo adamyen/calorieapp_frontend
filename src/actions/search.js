@@ -1,6 +1,9 @@
 import { FETCH_SEARCH_RESULTS_SUCCESS ,CLEAR_SEARCH_STATE} from './actionTypes';
 import { APIURLS } from '../helpers/urls';
 
+
+// This function searches for Food data and its calories
+
 export function searchUsers(searchText) {
   return (dispatch) => {
     const url = APIURLS.userSearch(searchText);
