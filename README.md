@@ -80,6 +80,7 @@ Link to YouTube video of the implementation of the BurnOut application:
 # Steps for Execution:
  - Install [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows)
  - Download and install [NodeJs](https://nodejs.org/en/download/)
+ - Download the Allow CORS: Access-Control-Allow-Origin extension for Google Chrome
  
  - In the command prompt clone the frontend project using following commands:
 #### `git clone https://github.com/shantanu109/calorieapp_frontend.git`
