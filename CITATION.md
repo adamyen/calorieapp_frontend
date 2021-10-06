@@ -17,4 +17,4 @@ Link to backend repository: https://github.com/shantanu109/calorieApp_server
 
  - Urmi Pathak(upathak@ncsu.edu)
 
-## License: MIT
+### License: MIT
