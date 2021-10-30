@@ -89,7 +89,10 @@ Link to YouTube video of the implementation of the BurnOut application:
 
  - Then enter
 #### `npm install`
- to install all the required dependencies in both the terminal. The dependencies have been mentioned in the 'package.json' file.
+ to install all the required dependencies in both the repos through terminal. The dependencies have been mentioned in the 'package.json' file.
+
+ - Ensure that nodemon is installed globally with the following command:
+ #### `npm install -g nodemon`
 
  - Then enter below command for both the terminals to start the application:
 #### `npm start`
