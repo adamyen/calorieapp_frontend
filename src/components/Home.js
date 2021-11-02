@@ -12,7 +12,7 @@ class Home extends Component {
                 <ImgSlider />
                 {/* <Widgets /> */}
                 <div className="home__section">
-                    <Card src="/images/R11.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
+                    <Card src="/images/Meal-Plan.jpeg" title="Customize Meal Plan" description="Your personal meal plan will be designed by our professional trainer."/>
                     <Card src="/images/R12.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
                     <Card src="/images/R13.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
                 </div>
@@ -70,13 +70,10 @@ class Home extends Component {
                 <Itembox src="/images/R54.jpg" title="Dance for Joy #6"/>
                 
             
-                 </div>
-
                 </div>
 
-               
-
-        </div>
+                </div>
+            </div>
 
             
 
