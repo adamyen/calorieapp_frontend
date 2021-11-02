@@ -12,7 +12,7 @@ class Home extends Component {
                 <ImgSlider />
                 {/* <Widgets /> */}
                 <div className="home__section">
-                    <Card src="/images/Meal-Plan.jpeg" title="Customize Meal Plan" description="Your personal meal plan will be designed by our professional trainer."/>
+                    <Card src="/images/Meal-Plan.jpeg" title="Customize Meal Plan" description="Your personal meal plan will be designed by our professional trainer." url="mealPlan"/>
                     <Card src="/images/R12.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
                     <Card src="/images/R13.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
                 </div>
