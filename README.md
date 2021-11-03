@@ -81,6 +81,7 @@ Link to YouTube video of the implementation of the BurnOut application:
  - Install [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows)
  - Download and install [NodeJs](https://nodejs.org/en/download/)
  - Download the Allow CORS: Access-Control-Allow-Origin extension for Google Chrome
+ - Download and install Android Studio (for Android development) and Xcode (for iOS development)
  
  - In the command prompt clone the frontend project using following commands:
 #### `git clone https://github.com/shantanu109/calorieapp_frontend.git`
@@ -92,10 +93,22 @@ Link to YouTube video of the implementation of the BurnOut application:
  to install all the required dependencies in both the repos through terminal. The dependencies have been mentioned in the 'package.json' file.
 
  - Ensure that nodemon is installed globally with the following command:
- #### `npm install -g nodemon`
+#### `npm install -g nodemon`
+
+ - In order to build new versions of the mobile app, ensure Ionic is installed
+#### `npm install -g @ionic/cli`
 
  - Then enter below command for both the terminals to start the application:
 #### `npm start`
+
+ - To create the mobile app, first build the current version of with:
+#### `npm run build`
+
+- Then open the Android app in Android Studio with:
+#### `npx cap open android`
+
+- And open the iOS app in Xcode with:
+#### `npx cap open ios`
 
  - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
  
@@ -138,7 +151,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
  - Creating pages for Meal and Workout plan.
 
- - Create a mobile application for the web version of the application.
+ - Optimize the mobile app layouts to take advantage of mobile features.
  
 # Team Members
 
