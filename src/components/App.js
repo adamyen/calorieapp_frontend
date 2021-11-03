@@ -4,10 +4,10 @@ import {connect} from 'react-redux';
 
 import jwtDecode from 'jwt-decode';
 
-import {BrowserRouter as Router,Link,Route, Switch,Redirect} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
 
 import {Home, Page404,Navbar, Login,Signup,Settings,Goal,History} from './';
-import PropTypes from 'prop-types';
+import { WorkoutBase } from '../views/workout';
 import {authenticateUser} from '../actions/auth';
 import { getAuthTokenFromLocalStorage } from '../helpers/utils';
 
@@ -42,10 +42,6 @@ class App extends React.Component {
 
   componentDidMount() {
     
-
-    //const {user} = this.props.auth
-    //this.props.dispatch(fetchFriends(user._id));
-
     const token = getAuthTokenFromLocalStorage();
 
     if (token) {
@@ -60,65 +56,49 @@ class App extends React.Component {
           name: user.name,
         })
       );
-      //const users = this.props.auth.user
-      
     }
   }
 
   render() {
-    const {auth} = this.props;
-    const { isLoggedIn } = this.props.auth;
-    const {user} = this.props.auth
     return (
       <Router>
-      <div className="wrapper">
-      
-        <Navbar />
-        {/* <Home /> */}
-
-      <Switch>
-      <Route exact path ="/" render={(props) => {
-          return <Home {...props}/>
-        }}/>
-        <Route path ="/login" component={Login}/>
-        <Route path ="/signup" component={Signup}/> 
-        <PrivateRoute
-              path="/settings"
-              component={Settings}
-              isLoggedIn={auth.isLoggedIn}
-        />
-        <PrivateRoute
-              path="/goal"
-              component={Goal}
-              isLoggedIn={auth.isLoggedIn}
-        />
-        <PrivateRoute
-              path="/history"
-              component={History}
-              isLoggedIn={auth.isLoggedIn}
-        />
+        <div className="wrapper">
         
-        <Route component={Page404}/>
+          <Navbar />
 
-      </Switch>
-        
-
-      </div>
-      
+        <Switch>
+          <Route exact path ="/" render={(props) => (<Home {...props}/>)}/>
+            <Route path="/login" component={Login}/>
+            <Route path="/signup" component={Signup}/>
+            <Route path="/yoga" component={WorkoutBase} />
+            <PrivateRoute
+                  path="/settings"
+                  component={Settings}
+                  isLoggedIn={this.props.auth.isLoggedIn}
+            />
+            <PrivateRoute
+                  path="/goal"
+                  component={Goal}
+                  isLoggedIn={this.props.auth.isLoggedIn}
+            />
+            <PrivateRoute
+                  path="/history"
+                  component={History}
+                  isLoggedIn={this.props.auth.isLoggedIn}
+            />
+          <Route component={Page404}/>
+        </Switch>
+        </div>
       </Router>
     );
   }
 }
 
 function mapStateToProps (state){
-
   return {
-   
     auth: state.auth,
     profile:state.profile
-
   }
-
 }
 export default connect(mapStateToProps)(App);
 
