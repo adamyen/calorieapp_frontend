@@ -11,12 +11,12 @@ class Home extends Component {
             <div>
                 <ImgSlider />
                 {/* <Widgets /> */}
-                <div className="home__section">
+                <div className="f6-display">
                     <Card src="/images/R11.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
                     <Card src="/images/R12.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
                     <Card src="/images/R13.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
                 </div>
-                <div className="home__section">
+                <div className="f6-display">
                 <Card src="/images/R21.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
                 <Card src="/images/R22.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
                 <Card src="/images/R23.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
