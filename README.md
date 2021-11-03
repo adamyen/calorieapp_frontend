@@ -104,6 +104,9 @@ Link to YouTube video of the implementation of the BurnOut application:
  - To create the mobile app, first build the current version of with:
 #### `npm run build`
 
+ - Then update the mobile app with:
+#### `npx cap sync`
+
 - Then open the Android app in Android Studio with:
 #### `npx cap open android`
 
