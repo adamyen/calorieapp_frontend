@@ -104,12 +104,20 @@ class MealPlan extends Component {
                 )}
             </div>
             </form>
-            <h2>Grains we got</h2>
+            <h2>Common Grains</h2>
             <div className="home__section">
-                <Card src="/images/Grain4.jpeg" title="Saffron Basmati Rice" description="A dish made from saffron, white rice and also usually vegetable bouillon."/>
-                <Card src="/images/Grain3.jpeg" title="Brown Basmati Rice" description="Chewy with a light, nutty flavor, tender yet separate grains, and a wonderful fragrance."/>
-                <Card src="/images/Grain2.jpeg" title="Black Lentils" description="Black lentils are cooked with spices, tomatoes, and cream for a wholesome and delicious dish."/>
-                <Card src="/images/Grain1.jpeg" title="RightRice" description="A high protein and high fiber grain made from 90% vegetables (lentils, chickpeas, and peas)."/>
+                <Card src="/images/Grain4.jpeg" title="Saffron Basmati Rice" description="Calories: 150"/>
+                <Card src="/images/Grain3.jpeg" title="Brown Basmati Rice" description="Calories: 140"/>
+                <Card src="/images/Grain2.jpeg" title="Black Lentils" description="Calories: 120"/>
+                <Card src="/images/Grain1.jpeg" title="RightRice" description="Calories: 130"/>
+            </div>
+
+            <h2>Common Veggies</h2>
+            <div className="home__section">
+                <Card src="/images/Green1.jpeg" title="Arugula" description="Calories: 80"/>
+                <Card src="/images/Green2.jpeg" title="Spinach" description="Calories: 80"/>
+                <Card src="/images/Green3.jpeg" title="Romaine" description="Calories: 80"/>
+                <Card src="/images/Green4.jpeg" title="Cress" description="Calories: 80"/>
             </div>
         </div>
         );
