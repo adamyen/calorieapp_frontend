@@ -2,11 +2,11 @@ import React from 'react';
 import './Itembox.css';
 // import { useDataLayerValue } from "./DataLayer";
 
-function Itembox({src,title}){
+function Itembox({src,title,url}){
     
     
     return (
-        <div>
+        <div onClick={ ()=>{window.location.href=`/${url}`} }>
             <figure className="f6-song-img-2">
 
             <img className="songbox__img" src={src} alt="" />
