@@ -12,6 +12,8 @@ import {Home, Page404,Navbar, Login,Signup,Settings,Goal,History} from './';
 import PropTypes from 'prop-types';
 import {authenticateUser} from '../actions/auth';
 import { getAuthTokenFromLocalStorage } from '../helpers/utils';
+import MealPlan from './MealPlan';
+import MealPlanResult from './MealPlanResult';
 import WalkFitness from './WalkFitness';
 import DanceFitness from './DanceFitness';
 import HRX from './HRX';
@@ -88,7 +90,9 @@ class App extends React.Component {
           return <Home {...props}/>
         }}/>
         <Route path ="/login" component={Login}/>
-        <Route path ="/signup" component={Signup}/>
+        <Route path ="/signup" component={Signup}/> 
+        <Route path ="/mealPlan" component={MealPlan}/>
+        <Route path ="/mealPlanResult" component={MealPlanResult}/>
         <Route path ="/walkfitness" component={WalkFitness}/>
         <Route path ="/dancefitness" component={DanceFitness}/>
         <Route path ="/hrx" component={HRX}/>

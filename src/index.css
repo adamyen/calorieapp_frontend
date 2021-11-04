@@ -778,6 +778,14 @@ nav .nav-links ul li:hover {
   padding:30px;
 }
 
+.meal_plan__section{
+  height: 400px;
+  width: 450px;
+  justify-content: center;
+  align-items: center;
+  padding:30px;
+}
+
 .header__middle{
   display: flex;
   flex:1;
