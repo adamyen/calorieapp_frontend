@@ -11,6 +11,7 @@ import PropTypes from 'prop-types';
 import {authenticateUser} from '../actions/auth';
 import { getAuthTokenFromLocalStorage } from '../helpers/utils';
 import MealPlan from './MealPlan';
+import MealPlanResult from './MealPlanResult';
 
 const PrivateRoute = (privateRouteProps) => {
   const { isLoggedIn, path, component: Component } = privateRouteProps;
@@ -83,6 +84,7 @@ class App extends React.Component {
         <Route path ="/login" component={Login}/>
         <Route path ="/signup" component={Signup}/> 
         <Route path ="/mealPlan" component={MealPlan}/>
+        <Route path = "/mealPlanResult" component={MealPlanResult}/>
         <PrivateRoute
               path="/settings"
               component={Settings}

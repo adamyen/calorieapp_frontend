@@ -3,56 +3,33 @@ import { clearAuthState, login, loginGoogle } from '../actions/auth';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import Card from './Card';
-import MealPlanResult from './MealPlanResult';
+// import GoogleLogin from 'react-google-login';
 
-class MealPlan extends Component {
+class MealPlanResult extends Component {
     
-    constructor(props) {
-        super(props);
-
-        this.state = {
-        age: '',
-        gender: '',
-        weight: '',
-        height: ''
-        }
-    }
 
     handleFormSubmit = (e) => {
         e.preventDefault();
+        
         console.log(this.state);
-        window.location.href=`/mealPlanResult?age=${this.state.age}&gender=${this.state.gender}&weight=${this.state.weight}&height=${this.state.height}`
+        window.location.href=`/mealPlan`
     };
 
-
-    handleAgeChange = (e) => {
-        this.setState({
-        age: e.target.value,
-        });
-    };
-    handleGenderChange = (e) => {
-        this.setState({
-        gender: e.target.value,
-        });
-    };
-    handleWeightChange = (e) => {
-        this.setState({
-        weight: e.target.value,
-        });
-    };
-    handleHeightChange = (e) => {
-        this.setState({
-        height: e.target.value,
-        });
-    };
-    
-    render() {
-        const { error, inProgress, isLoggedIn } = this.props.auth;
-        const { from } = this.props.location.state || { from: { pathname: '/' } };
-
-        if (isLoggedIn) {
-        return <Redirect to={from} />;
+    metabolicRate = (age, gender, weight, height) => {
+        if (gender === "M") {
+            return 66.47 + 13.7*weight + 5*height - 6.8*age
         }
+        return 655.1 + 9.6*weight + 1.8*height - 4.7*age
+    };
+
+    render() {
+        
+        const search = this.props.location.search; // returns the URL query String
+        const params = new URLSearchParams(search); 
+        const age = params.get('age'); 
+        const gender = params.get('gender'); 
+        const weight = params.get('weight'); 
+        const height = params.get('height'); 
 
         return (
         <div>
@@ -63,8 +40,7 @@ class MealPlan extends Component {
                 type="text"
                 placeholder="Age"
                 required
-                onChange={this.handleAgeChange}
-                value={this.state.age}
+                value={age}
                 />
             </div>
             <div className="field">
@@ -72,8 +48,7 @@ class MealPlan extends Component {
                 type="text"
                 placeholder="Gender (M/F)"
                 required
-                onChange={this.handleGenderChange}
-                value={this.state.gender}
+                value={gender}
                 />
             </div>
             <div className="field">
@@ -81,8 +56,7 @@ class MealPlan extends Component {
                 type="text"
                 placeholder="Weight (kg)"
                 required
-                onChange={this.handleWeightChange}
-                value={this.state.weight}
+                value={weight}
                 />
             </div>
             <div className="field">
@@ -90,24 +64,16 @@ class MealPlan extends Component {
                 type="text"
                 placeholder="Height (cm)"
                 required
-                onChange={this.handleHeightChange}
-                value={this.state.height}
+                value={height}
                 />
             </div>
             <div className="field">
-                {inProgress ? (
-                <button onClick={this.handleFormSubmit} disabled={inProgress}>
-                    Setting up your personal meal plan...
+                <button onClick={this.handleFormSubmit} disabled={false}>
+                    Reset
                 </button>
-                ) : (
-                <button onClick={this.handleFormSubmit} disabled={inProgress}>
-                    Calculate
-                </button>
-                )}
             </div>
             </form>
-            <h1>Calories Chart</h1>
-            <h1>_____________________________________________________________________________________</h1>
+            <h1>Your metabolic rate:{this.metabolicRate(age, gender, weight, height)}</h1>
             <h2>Common Grains</h2>
             <div className="home__section">
                 <Card src="/images/Grain4.jpeg" title="Saffron Basmati Rice" description="Calories: 150"/>
@@ -141,4 +107,4 @@ function mapStateToProps(state) {
         auth: state.auth,
     };
 }
-export default connect(mapStateToProps)(MealPlan);
+export default connect(mapStateToProps)(MealPlanResult);
