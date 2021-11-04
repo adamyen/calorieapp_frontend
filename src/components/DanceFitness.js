@@ -14,7 +14,7 @@ class DanceFitness extends Component {
 
     return (
         <div style={{position:"fixed",top: '50%',left: '50%',transform: 'translate(-50%,-50%)',textAlign:"center"}}>
-            <h1> WalkFitness 101 </h1>
+            <h1> DanceFitness 101 </h1>
             <h4>
                 If you are looking for something more intense, Dance Fitness is a great choice! <br></br>
                 Dance fitness is a type of exercise class that incorporates some or many forms of dance.<br></br>
