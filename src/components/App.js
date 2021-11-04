@@ -13,6 +13,7 @@ import { getAuthTokenFromLocalStorage } from '../helpers/utils';
 import WalkFitness from './WalkFitness';
 import DanceFitness from './DanceFitness';
 import HRX from './HRX';
+import Yoga from './HRX';
 
 const PrivateRoute = (privateRouteProps) => {
   const { isLoggedIn, path, component: Component } = privateRouteProps;
@@ -87,6 +88,7 @@ class App extends React.Component {
         <Route path ="/walkfitness" component={WalkFitness}/>
         <Route path ="/dancefitness" component={DanceFitness}/>
         <Route path ="/hrx" component={HRX}/>
+        <Route path ="/yoga" component={Yoga}/>
 
         <PrivateRoute
               path="/settings"
