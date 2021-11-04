@@ -116,14 +116,14 @@ class MealPlanResult extends Component {
             <h2>BURNOUT suggested meal plan</h2>
             <h3>Breakfast</h3>
             <div className="home__section">
-                <Card src={veg['image']} title={veg['name']} description="Serving 1"/>
-                <Card src={grain['image']} title={grain['name']} description="Serving 1"/>
+                <Card src={veg['image']} title={veg['name']} description="Serving: 1"/>
+                <Card src={grain['image']} title={grain['name']} description="Serving: 1"/>
                 <Card src={protein['image']} title={protein['name']} description={this.protiensPercent(protein['calories'], breakfastCal, (veg['calories'] + grain['calories']))}/>
             </div>
             <h3>Lunch and dinner</h3>
             <div className="home__section">
-                <Card src={veg2['image']} title={veg2['name']} description="Serving 1"/>
-                <Card src={grain2['image']} title={grain2['name']} description="Serving 1"/>
+                <Card src={veg2['image']} title={veg2['name']} description="Serving: 1"/>
+                <Card src={grain2['image']} title={grain2['name']} description="Serving: 1"/>
                 <Card src={protein2['image']} title={protein2['name']} description={this.protiensPercent(protein2['calories'], otherCal, (veg2['calories'] + grain2['calories']))}/>
             </div>
         </div>
