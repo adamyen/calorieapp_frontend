@@ -13,7 +13,7 @@ import { getAuthTokenFromLocalStorage } from '../helpers/utils';
 import WalkFitness from './WalkFitness';
 import DanceFitness from './DanceFitness';
 import HRX from './HRX';
-import Yoga from './HRX';
+import Yoga from './Yoga';
 
 const PrivateRoute = (privateRouteProps) => {
   const { isLoggedIn, path, component: Component } = privateRouteProps;
