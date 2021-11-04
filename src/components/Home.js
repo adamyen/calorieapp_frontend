@@ -28,7 +28,7 @@ class Home extends Component {
        
                 <Itembox src="/images/R21.jpg" title="Walk Fitness" url="walkfitness" />
                 <Itembox src="/images/R22.jpg" title="Dance Fitness" url="dancefitness" />
-                <Itembox src="/images/R23.jpg" title="HRX"/>
+                <Itembox src="/images/R23.jpg" title="HRX" url="hrx"/>
                 <Itembox src="/images/R24.jpg" title="Yoga"/>
                 
             
