@@ -104,6 +104,8 @@ class MealPlan extends Component {
                 )}
             </div>
             </form>
+            <h1>Calories Chart</h1>
+            <h1>_____________________________________________________________________________________</h1>
             <h2>Common Grains</h2>
             <div className="home__section">
                 <Card src="/images/Grain4.jpeg" title="Saffron Basmati Rice" description="Calories: 150"/>
@@ -118,6 +120,14 @@ class MealPlan extends Component {
                 <Card src="/images/Green2.jpeg" title="Spinach" description="Calories: 80"/>
                 <Card src="/images/Green3.jpeg" title="Romaine" description="Calories: 80"/>
                 <Card src="/images/Green4.jpeg" title="Cress" description="Calories: 80"/>
+            </div>
+
+            <h2>Common Proteins</h2>
+            <div className="home__section">
+                <Card src="/images/Protein1.jpeg" title="Chicken" description="Calories: 260"/>
+                <Card src="/images/Protein2.jpeg" title="Beef" description="Calories: 280"/>
+                <Card src="/images/Protein3.jpeg" title="Fish" description="Calories: 250"/>
+                <Card src="/images/Protein4.jpeg" title="Pork" description="Calories: 300"/>
             </div>
         </div>
         );
