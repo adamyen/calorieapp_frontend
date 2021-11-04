@@ -54,6 +54,7 @@
     ]
   },
   "devDependencies": {
-    "@capacitor/cli": "^3.2.5"
+    "@capacitor/cli": "^3.2.5",
+    "msw": "^0.35.0"
   }
 }

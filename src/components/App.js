@@ -120,5 +120,6 @@ function mapStateToProps (state){
   }
 
 }
+//export function App() {};
 export default connect(mapStateToProps)(App);
 
