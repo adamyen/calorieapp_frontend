@@ -2,6 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 // import Home from './Home';
 
+
 import jwtDecode from 'jwt-decode';
 
 import {BrowserRouter as Router,Link,Route, Switch,Redirect} from 'react-router-dom';
@@ -120,6 +121,6 @@ function mapStateToProps (state){
   }
 
 }
-//export function App() {};
+
 export default connect(mapStateToProps)(App);
 
