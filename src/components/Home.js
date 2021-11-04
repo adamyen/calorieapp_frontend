@@ -23,6 +23,13 @@ class Home extends Component {
                 </div>
 
                 <div className="body__infoText2">
+                <h2>Meal Plan</h2>
+                <div className="meal_plan__section">
+                    <Card src="/images/Meal-Plan.jpeg" title="Customize Meal Plan" description="Your personal meal plan will be designed by our professional trainer." url="mealPlan"/>
+                </div>
+                </div>
+
+                <div className="body__infoText2">
                 <h2>5 Must Try Workouts</h2>
                 <div className="f6-display">
        
