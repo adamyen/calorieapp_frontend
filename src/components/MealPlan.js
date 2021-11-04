@@ -53,7 +53,7 @@ class MealPlan extends Component {
 
         return (
         <div>
-            <form className="mealPlan-form">
+            <form className="login-form">
             <span className="login-signup-header">Personal Data</span>
             <div className="field">
                 <input
