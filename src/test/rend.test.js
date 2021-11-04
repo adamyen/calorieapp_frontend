@@ -9,7 +9,7 @@ import Fetch from 'node-fetch'
 import App from '../components/App';
 
 describe('App', () => {
-    test('renders App component', () => {
+    test('renders App component and displays it', () => {
       render(<App />);
    
       screen.debug();

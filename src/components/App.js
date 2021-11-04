@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import { configureStore } from '../store';
 // import Home from './Home';
+
 
 import jwtDecode from 'jwt-decode';
 
@@ -12,6 +14,12 @@ import {authenticateUser} from '../actions/auth';
 import { getAuthTokenFromLocalStorage } from '../helpers/utils';
 import MealPlan from './MealPlan';
 import MealPlanResult from './MealPlanResult';
+import WalkFitness from './WalkFitness';
+import DanceFitness from './DanceFitness';
+import HRX from './HRX';
+import Yoga from './Yoga';
+
+const store = configureStore();
 
 const PrivateRoute = (privateRouteProps) => {
   const { isLoggedIn, path, component: Component } = privateRouteProps;
@@ -84,7 +92,12 @@ class App extends React.Component {
         <Route path ="/login" component={Login}/>
         <Route path ="/signup" component={Signup}/> 
         <Route path ="/mealPlan" component={MealPlan}/>
-        <Route path = "/mealPlanResult" component={MealPlanResult}/>
+        <Route path ="/mealPlanResult" component={MealPlanResult}/>
+        <Route path ="/walkfitness" component={WalkFitness}/>
+        <Route path ="/dancefitness" component={DanceFitness}/>
+        <Route path ="/hrx" component={HRX}/>
+        <Route path ="/yoga" component={Yoga}/>
+
         <PrivateRoute
               path="/settings"
               component={Settings}
@@ -123,6 +136,6 @@ function mapStateToProps (state){
   }
 
 }
-//export function App() {};
+
 export default connect(mapStateToProps)(App);
 
