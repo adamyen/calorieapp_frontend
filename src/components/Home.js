@@ -26,7 +26,7 @@ class Home extends Component {
                 <h2>5 Must Try Workouts</h2>
                 <div className="f6-display">
        
-                <Itembox src="/images/R21.jpg" title="Walk Fitness" />
+                <Itembox src="/images/R21.jpg" title="Walk Fitness" url="walkfitness" />
                 <Itembox src="/images/R22.jpg" title="Dance Fitness"/>
                 <Itembox src="/images/R23.jpg" title="HRX"/>
                 <Itembox src="/images/R24.jpg" title="Yoga"/>

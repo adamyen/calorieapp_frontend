@@ -10,6 +10,7 @@ import {Home, Page404,Navbar, Login,Signup,Settings,Goal,History} from './';
 import PropTypes from 'prop-types';
 import {authenticateUser} from '../actions/auth';
 import { getAuthTokenFromLocalStorage } from '../helpers/utils';
+import WalkFitness from './WalkFitness';
 
 
 const PrivateRoute = (privateRouteProps) => {
@@ -81,7 +82,8 @@ class App extends React.Component {
           return <Home {...props}/>
         }}/>
         <Route path ="/login" component={Login}/>
-        <Route path ="/signup" component={Signup}/> 
+        <Route path ="/signup" component={Signup}/>
+        <Route path ="/walkfitness" component={WalkFitness}/>
         <PrivateRoute
               path="/settings"
               component={Settings}
