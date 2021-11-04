@@ -11,7 +11,10 @@ import {Home, Page404,Navbar, Login,Signup,Settings,Goal,History} from './';
 import PropTypes from 'prop-types';
 import {authenticateUser} from '../actions/auth';
 import { getAuthTokenFromLocalStorage } from '../helpers/utils';
-
+import WalkFitness from './WalkFitness';
+import DanceFitness from './DanceFitness';
+import HRX from './HRX';
+import Yoga from './Yoga';
 
 const PrivateRoute = (privateRouteProps) => {
   const { isLoggedIn, path, component: Component } = privateRouteProps;
@@ -82,7 +85,12 @@ class App extends React.Component {
           return <Home {...props}/>
         }}/>
         <Route path ="/login" component={Login}/>
-        <Route path ="/signup" component={Signup}/> 
+        <Route path ="/signup" component={Signup}/>
+        <Route path ="/walkfitness" component={WalkFitness}/>
+        <Route path ="/dancefitness" component={DanceFitness}/>
+        <Route path ="/hrx" component={HRX}/>
+        <Route path ="/yoga" component={Yoga}/>
+
         <PrivateRoute
               path="/settings"
               component={Settings}
