@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import { clearAuthState, login, loginGoogle } from '../actions/auth';
 import { connect } from 'react-redux';
-import { Redirect } from 'react-router-dom';
 import Card from './Card';
-import MealPlanResult from './MealPlanResult';
 
 class MealPlan extends Component {
     
@@ -47,13 +44,6 @@ class MealPlan extends Component {
     };
     
     render() {
-        const { error, inProgress, isLoggedIn } = this.props.auth;
-        const { from } = this.props.location.state || { from: { pathname: '/' } };
-
-        if (isLoggedIn) {
-        return <Redirect to={from} />;
-        }
-
         return (
         <div>
             <form className="login-form">
@@ -95,15 +85,9 @@ class MealPlan extends Component {
                 />
             </div>
             <div className="field">
-                {inProgress ? (
-                <button onClick={this.handleFormSubmit} disabled={inProgress}>
-                    Setting up your personal meal plan...
-                </button>
-                ) : (
-                <button onClick={this.handleFormSubmit} disabled={inProgress}>
+                <button onClick={this.handleFormSubmit} disabled={false}>
                     Calculate
                 </button>
-                )}
             </div>
             </form>
             <h1>Calories Chart</h1>
