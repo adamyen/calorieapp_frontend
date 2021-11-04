@@ -1,5 +1,6 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import { configureStore } from '../store';
 // import Home from './Home';
 
 
@@ -15,6 +16,8 @@ import WalkFitness from './WalkFitness';
 import DanceFitness from './DanceFitness';
 import HRX from './HRX';
 import Yoga from './Yoga';
+
+const store = configureStore();
 
 const PrivateRoute = (privateRouteProps) => {
   const { isLoggedIn, path, component: Component } = privateRouteProps;
