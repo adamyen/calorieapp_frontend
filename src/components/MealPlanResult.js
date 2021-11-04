@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Card from './Card';
-// import GoogleLogin from 'react-google-login';
 
 class MealPlanResult extends Component {
     
-
     handleFormSubmit = (e) => {
         e.preventDefault();
-        
         console.log(this.state);
         window.location.href=`/mealPlan`
     };
@@ -20,6 +17,40 @@ class MealPlanResult extends Component {
         return 655.1 + 9.6*weight + 1.8*height - 4.7*age
     };
 
+    breakfast = (age, gender, weight, height) => {
+        if (gender === "M") {
+            return (66.47 + 13.7*weight + 5*height - 6.8*age)/4
+        }
+        return (655.1 + 9.6*weight + 1.8*height - 4.7*age)/4
+    };
+
+    otherMeal = (age, gender, weight, height) => {
+        if (gender === "M") {
+            return (66.47 + 13.7*weight + 5*height - 6.8*age)*3/8
+        }
+        return (655.1 + 9.6*weight + 1.8*height - 4.7*age)*3/8
+    };
+
+    randomVeggie() {
+        const vegArray = [{image: "/images/Green1.jpeg", name: "Arugula", calories: 80}, {image: "/images/Green2.jpeg", name: "Spinach", calories: 80}, {image: "/images/Green3.jpeg", name: "Romaine", calories: 80}, {image: "/images/Green4.jpeg", name: "Cress", calories: 80}]
+        return vegArray[Math.floor(Math.random() * vegArray.length)]
+    }
+
+    randomGrain() {
+        const grainArray = [{image: "/images/Grain4.jpeg", name: "Saffron Basmati Rice", calories: 150}, {image: "/images/Grain3.jpeg", name: "Brown Basmati Rice", calories: 140}, {image: "/images/Grain2.jpeg", name: "Black Lentils", calories: 120}, {image: "/images/Grain1.jpeg", name: "RightRice", calories: 130}]
+        return grainArray[Math.floor(Math.random() * grainArray.length)]
+    }
+
+    randomProtein() {
+        const proArray = [{image: "/images/Protein1.jpeg", name: "Chicken", calories: 260}, {image: "/images/Protein2.jpeg", name: "Beef", calories: 280}, {image: "/images/Protein3.jpeg", name: "Fish", calories: 250}, {image: "/images/Protein4.jpeg", name: "Pork", calories: 300}]
+        return proArray[Math.floor(Math.random() * proArray.length)]
+    }
+
+    protiensPercent = (protienCal, targetCal, consumedCal) => {
+        const leftCal = targetCal - consumedCal
+        return `Serving: ${leftCal/protienCal}`
+    }
+
     render() {
         
         const search = this.props.location.search; // returns the URL query String
@@ -27,7 +58,15 @@ class MealPlanResult extends Component {
         const age = params.get('age'); 
         const gender = params.get('gender'); 
         const weight = params.get('weight'); 
-        const height = params.get('height'); 
+        const height = params.get('height');
+        const veg = this.randomVeggie()
+        const grain = this.randomGrain()
+        const protein = this.randomProtein()
+        const veg2 = this.randomVeggie()
+        const grain2 = this.randomGrain()
+        const protein2 = this.randomProtein()
+        const breakfastCal = this.breakfast(age, gender, weight, height)
+        const otherCal = this.otherMeal(age, gender, weight, height)
 
         return (
         <div>
@@ -72,28 +111,20 @@ class MealPlanResult extends Component {
             </div>
             </form>
             <h1>Your metabolic rate:{this.metabolicRate(age, gender, weight, height)}</h1>
-            <h2>Common Grains</h2>
+            <h1>Breakfast suggest calories:{breakfastCal}</h1>
+            <h1>Lunch and dinner suggest calories:{otherCal}</h1>
+            <h2>BURNOUT suggested meal plan</h2>
+            <h3>Breakfast</h3>
             <div className="home__section">
-                <Card src="/images/Grain4.jpeg" title="Saffron Basmati Rice" description="Calories: 150"/>
-                <Card src="/images/Grain3.jpeg" title="Brown Basmati Rice" description="Calories: 140"/>
-                <Card src="/images/Grain2.jpeg" title="Black Lentils" description="Calories: 120"/>
-                <Card src="/images/Grain1.jpeg" title="RightRice" description="Calories: 130"/>
+                <Card src={veg['image']} title={veg['name']} description="Serving 1"/>
+                <Card src={grain['image']} title={grain['name']} description="Serving 1"/>
+                <Card src={protein['image']} title={protein['name']} description={this.protiensPercent(protein['calories'], breakfastCal, (veg['calories'] + grain['calories']))}/>
             </div>
-
-            <h2>Common Veggies</h2>
+            <h3>Lunch and dinner</h3>
             <div className="home__section">
-                <Card src="/images/Green1.jpeg" title="Arugula" description="Calories: 80"/>
-                <Card src="/images/Green2.jpeg" title="Spinach" description="Calories: 80"/>
-                <Card src="/images/Green3.jpeg" title="Romaine" description="Calories: 80"/>
-                <Card src="/images/Green4.jpeg" title="Cress" description="Calories: 80"/>
-            </div>
-
-            <h2>Common Proteins</h2>
-            <div className="home__section">
-                <Card src="/images/Protein1.jpeg" title="Chicken" description="Calories: 260"/>
-                <Card src="/images/Protein2.jpeg" title="Beef" description="Calories: 280"/>
-                <Card src="/images/Protein3.jpeg" title="Fish" description="Calories: 250"/>
-                <Card src="/images/Protein4.jpeg" title="Pork" description="Calories: 300"/>
+                <Card src={veg2['image']} title={veg2['name']} description="Serving 1"/>
+                <Card src={grain2['image']} title={grain2['name']} description="Serving 1"/>
+                <Card src={protein2['image']} title={protein2['name']} description={this.protiensPercent(protein2['calories'], otherCal, (veg2['calories'] + grain2['calories']))}/>
             </div>
         </div>
         );
