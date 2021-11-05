@@ -64,9 +64,6 @@ export function login(email, password) {
   };
 }
 
-
-
-
 export function signup(email, password, confirmPassword, name) {
   return (dispatch) => {
     const url = APIURLS.signup();
@@ -84,7 +81,7 @@ export function signup(email, password, confirmPassword, name) {
     })
       .then((response) => response.json())
       .then((data) => {
-        // console.log('data', data);
+        console.log('>>>>>>>> data', data);
         if (data.success) {
           // do something
           localStorage.setItem('token', data.data.token);
@@ -92,7 +89,8 @@ export function signup(email, password, confirmPassword, name) {
           return;
         }
         dispatch(signupFailed(data.message));
-      });
+      })
+      .catch(e => console.error(e));
   };
 }
 
