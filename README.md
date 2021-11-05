@@ -103,6 +103,7 @@ Link to YouTube video of the implementation of the BurnOut application:
 
  - In order to build new versions of the mobile app, ensure Ionic is installed
 #### `npm install -g @ionic/cli`
+#### `npm install @capacitor/core --save`
 
  - Then enter below command for both the terminals to start the application:
 #### `npm start`
