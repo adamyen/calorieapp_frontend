@@ -37,6 +37,7 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
  - Record of calories in and calories burn out day wise in History tab.
  - Helps user to figure out how much to eat/exercise according to their desired goal(weight loss/gain).
  - Easy to use application.
+ - Mobile app versions available for both Android and iOS
 
 # Implementation:
 Link to YouTube video of the implementation of the BurnOut application:
@@ -50,6 +51,9 @@ Link to YouTube video of the implementation of the BurnOut application:
  - ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)  
  - ![RestAPI](https://img.shields.io/badge/RestAPI-005571?style=for-the-badge&logo=restapi)
  - ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+ - ![Ionic](https://img.shields.io/badge/Ionic-005571?style=for-the-badge&logo=ionic)
+ - ![Android Studio](https://img.shields.io/badge/AndroidStudio-005571?style=for-the-badge&logo=android&logoColor=ffdd54)
+ - ![Xcode](https://img.shields.io/badge/Xcode-005571?style=for-the-badge&logo=xcode)
  
  # Core Functionalities:
  
