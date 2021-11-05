@@ -1,7 +1,7 @@
 <a href="https://doi.org/10.5281/zenodo.5534872"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5534872.svg" alt="DOI"></a> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/shantanu109/calorieapp_frontend/blob/main/LICENSE.md) <a href="https://img.shields.io/github/commits-since/shantanu109/calorieapp_frontend/1.0.0.svg" ><img src="https://img.shields.io/github/commits-since/shantanu109/calorieapp_frontend/1.0.0.svg"></a>   <a href="https://img.shields.io/github/issues/shantanu109/calorieapp_frontend.svg" ><img src="https://img.shields.io/github/issues/shantanu109/calorieapp_frontend.svg"></a>  <a href="https://img.shields.io/github/issues-closed/shantanu109/calorieapp_frontend.svg"><img src="https://img.shields.io/github/issues-closed/shantanu109/calorieapp_frontend.svg"></a> 
-[![Repo-size](https://img.shields.io/github/repo-size/shantanu109/calorieapp_frontend)](https://GitHub.com/shantanu109/calorieapp_frontend/)
+[![Repo-size](https://img.shields.io/github/repo-size/adamyen/calorieapp_frontend)](https://GitHub.com/adamyen/calorieapp_frontend/)
 [![file_count](https://img.shields.io/github/directory-file-count/shantanu109/calorieapp_frontend)](https://GitHub.com/shantanu109/calorieapp_frontend/)
-[![language_count](https://img.shields.io/github/languages/count/shantanu109/calorieapp_frontend)](https://GitHub.com/shantanu109/calorieapp_frontend/)
+[![language_count](https://img.shields.io/github/languages/count/adamyen/calorieapp_frontend)](https://GitHub.com/adamyen/calorieapp_frontend/)
 [![build](https://img.shields.io/travis/adamyen/calorieapp_frontend)]
 [![coverage](https://img.shields.io/coveralls/github/adamyen/calorieapp_frontend)]  
 
