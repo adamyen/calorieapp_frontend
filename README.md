@@ -120,8 +120,8 @@ Link to YouTube video of the implementation of the BurnOut application:
  - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
  
 # Source Code
- - Link to frontend repository: https://github.com/shantanu109/calorieapp_frontend
- - Link to backend repository: https://github.com/shantanu109/calorieApp_server
+ - Link to frontend repository: https://github.com/adamyen/calorieapp_frontend
+ - Link to backend repository: https://github.com/adamyen/calorie_server
 
 # Additional commands for React App
 
