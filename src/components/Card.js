@@ -2,19 +2,10 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import './Card.css';
 
-function Card(props){
-    let history = useHistory();
-
-    function handleClick() {
-        history.push("/yoga");
-    }
-
+function Card({src,title,description,price,url}){
     return (
-        <div
-            className='card'
-            onClick={handleClick}
-        >
-            <img src={props.src} alt="" />
+        <div className='card' onClick={ ()=>{window.location.href=`/${url}`} }>
+            <img src={src} alt="" />
             <div className="card__info">
                 <h2>{props.title}</h2>
                 <h4>{props.description}</h4>

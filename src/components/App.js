@@ -1,6 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
+import { configureStore } from '../store';
 // import Home from './Home';
+
 
 import jwtDecode from 'jwt-decode';
 
@@ -10,7 +12,14 @@ import {Home, Page404,Navbar, Login,Signup,Settings,Goal,History} from './';
 import { WorkoutBase } from '../views/workout';
 import {authenticateUser} from '../actions/auth';
 import { getAuthTokenFromLocalStorage } from '../helpers/utils';
+import MealPlan from './MealPlan';
+import MealPlanResult from './MealPlanResult';
+import WalkFitness from './WalkFitness';
+import DanceFitness from './DanceFitness';
+import HRX from './HRX';
+import Yoga from './Yoga';
 
+const store = configureStore();
 
 const PrivateRoute = (privateRouteProps) => {
   const { isLoggedIn, path, component: Component } = privateRouteProps;
@@ -62,7 +71,43 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <div className="wrapper">
+      <div className="wrapper">
+      
+        <Navbar />
+        {/* <Home /> */}
+
+      <Switch>
+      <Route exact path ="/" render={(props) => {
+          return <Home {...props}/>
+        }}/>
+        <Route path ="/login" component={Login}/>
+        <Route path ="/signup" component={Signup}/> 
+        <Route path ="/mealPlan" component={MealPlan}/>
+        <Route path ="/mealPlanResult" component={MealPlanResult}/>
+        <Route path ="/walkfitness" component={WalkFitness}/>
+        <Route path ="/dancefitness" component={DanceFitness}/>
+        <Route path ="/hrx" component={HRX}/>
+        <Route path ="/yoga" component={Yoga}/>
+
+        <PrivateRoute
+              path="/settings"
+              component={Settings}
+              isLoggedIn={auth.isLoggedIn}
+        />
+        <PrivateRoute
+              path="/goal"
+              component={Goal}
+              isLoggedIn={auth.isLoggedIn}
+        />
+        <PrivateRoute
+              path="/history"
+              component={History}
+              isLoggedIn={auth.isLoggedIn}
+        />
+        
+        <Route component={Page404}/>
+
+      </Switch>
         
           <Navbar />
 
@@ -100,5 +145,6 @@ function mapStateToProps (state){
     profile:state.profile
   }
 }
+
 export default connect(mapStateToProps)(App);
 

@@ -9,25 +9,27 @@ class Home extends Component {
             <div>
                 <ImgSlider />
                 {/* <Widgets /> */}
-                <div className="home__section">
-                    <Card src="/images/R11.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
-                    <Card src="/images/R12.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
-                    <Card src="/images/R13.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
+                <div className="f6-display">
+                    <Card src="/images/R11.jpg" title="Yoga for Beginner" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
+                    <Card src="/images/R12.jpg" title="Yoga for Intermediate" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
+                    <Card src="/images/R13.jpg" title="Yoga for Advanced" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
                 </div>
-                <div className="home__section">
-                <Card src="/images/R21.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
-                <Card src="/images/R22.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
-                <Card src="/images/R23.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
+
+                <div className="body__infoText2">
+                <h2>Meal Plan</h2>
+                <div className="meal_plan__section">
+                    <Card src="/images/Meal-Plan.jpeg" title="Customize Meal Plan" description="Your personal meal plan will be designed by our professional trainer." url="mealPlan"/>
+                </div>
                 </div>
 
                 <div className="body__infoText2">
                 <h2>5 Must Try Workouts</h2>
                 <div className="f6-display">
        
-                <Itembox src="/images/R21.jpg" title="Walk Fitness" />
-                <Itembox src="/images/R22.jpg" title="Dance Fitness"/>
-                <Itembox src="/images/R23.jpg" title="HRX"/>
-                <Itembox src="/images/R24.jpg" title="Yoga"/>
+                <Itembox src="/images/R21.jpg" title="Walk Fitness" url="walkfitness" />
+                <Itembox src="/images/R22.jpg" title="Dance Fitness" url="dancefitness" />
+                <Itembox src="/images/R23.jpg" title="HRX" url="hrx"/>
+                <Itembox src="/images/R24.jpg" title="Yoga" url="yoga"/>
                 
             
                  </div>

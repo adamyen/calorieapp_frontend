@@ -123,7 +123,7 @@ class Navbar extends React.Component {
                }
               {!auth.isLoggedIn && (
                 <li>
-                  <Link to="/signup" style={{color:'gray',marginLeft:'10px',fontWeight:'bolder'}} >Register</Link>
+                  <Link to="/signup" style={{color:'gray',marginLeft:'10px', marginRight: '10px',fontWeight:'bolder'}} >Register</Link>
                 </li>
               )}
             </ul>
