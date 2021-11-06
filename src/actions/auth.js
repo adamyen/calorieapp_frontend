@@ -36,61 +36,52 @@ export function loginSuccess(user) {
   };
 }
 
-export function login(email, password) {
+export function login(username, password) {
   return (dispatch) => {
     dispatch(startLogin());
     const url = APIURLS.login();
-
     fetch(url, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Type': 'application/json',
       },
-      body: getFormBody({ email, password }),
+      body: JSON.stringify({ username, password }),
     })
-      .then((response) => response.json())
+      .then(res => res.json())
       .then((data) => {
-        console.log('data', data);
-
-        if (data.success) {
-          //dispatch action to save user
-          localStorage.setItem('token', data.data.token);
-          dispatch(loginSuccess(data.data.user));
-        //   dispatch(fetchUserFriends(data.data.user._id));
+        if (data.accessToken) {
+          localStorage.setItem('token', data.accessToken);
+          dispatch(loginSuccess());
           return;
         }
-        dispatch(loginFailed(data.message));
+      })
+      .catch(e => {
+        console.error('Error', e);
+        dispatch(loginFailed());
       });
   };
 }
 
-export function signup(email, password, confirmPassword, name) {
+export function signup({ username, email, password }) {
   return (dispatch) => {
     const url = APIURLS.signup();
+    const body = JSON.stringify({ username, email, password, roles: ['user'] });
     fetch(url, {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Type': 'application/json',
       },
-      body: getFormBody({
-        email,
-        password,
-        confirm_password: confirmPassword,
-        name,
-      }),
+      body,
     })
-      .then((response) => response.json())
+      .then(res => res.json())
       .then((data) => {
         console.log('>>>>>>>> data', data);
-        if (data.success) {
-          // do something
-          localStorage.setItem('token', data.data.token);
-          dispatch(signupSuccessful(data.data.user));
-          return;
-        }
-        dispatch(signupFailed(data.message));
+        login(username, password);
       })
-      .catch(e => console.error(e));
+      .catch(e => {
+        console.error('Error', e);
+        dispatch(signupFailed());
+      });
   };
 }
 

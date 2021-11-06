@@ -1,18 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
-import { startSingup, signup,clearAuthState} from '../actions/auth';
+import { startSingup, signup, clearAuthState } from '../actions/auth';
 import { Redirect } from 'react-router-dom';
-import sha256 from 'crypto-js/sha256';
-import hmacSHA512 from 'crypto-js/hmac-sha512';
-import Base64 from 'crypto-js/enc-base64';
 
-class Signup extends Component {
+class Signup extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = {
       email: '',
       password: '',
-      name: '',
+      username: '',
       confirmPassword: '',
     };
   }
@@ -29,11 +26,11 @@ class Signup extends Component {
 
   onFormSubmit = (e) => {
     e.preventDefault();
-    const { email, password, confirmPassword, name } = this.state;
+    const { email, password, confirmPassword, username } = this.state;
 
-    if (email && password && confirmPassword && name) {
+    if (email && password && confirmPassword && username) {
       this.props.dispatch(startSingup());
-      this.props.dispatch(signup(email, password, confirmPassword, name));
+      this.props.dispatch(signup({email, password, username}));
     }
   };
 
@@ -47,14 +44,14 @@ class Signup extends Component {
     return (
       <div>
       <form className="login-form">
-        <span className="login-signup-header"> Signup</span>
+        <span className="login-signup-header">Signup</span>
         {error && <div className="alert error-dailog">{error}</div>}
         <div className="field">
           <input
             placeholder="Name"
             type="text"
             required
-            onChange={(e) => this.handleInputChange('name', e.target.value)}
+            onChange={(e) => this.handleInputChange('username', e.target.value)}
           />
         </div>
         <div className="field">
@@ -67,20 +64,18 @@ class Signup extends Component {
         </div>
         <div className="field">
           <input
-            placeholder="Confirm password"
-            type="password"
-            required
-            onChange={(e) =>
-              this.handleInputChange('confirmPassword', e.target.value)
-            }
-          />
-        </div>
-        <div className="field">
-          <input
             placeholder="Password"
             type="password"
             required
             onChange={(e) => this.handleInputChange('password', e.target.value)}
+          />
+        </div>
+        <div className="field">
+          <input
+            placeholder="Confirm password"
+            type="password"
+            required
+            onChange={(e) => this.handleInputChange('confirmPassword', e.target.value)}
           />
         </div>
         <div className="field">
