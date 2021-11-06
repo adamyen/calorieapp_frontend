@@ -1,7 +1,9 @@
 <a href="https://doi.org/10.5281/zenodo.5534872"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5534872.svg" alt="DOI"></a> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/shantanu109/calorieapp_frontend/blob/main/LICENSE.md) <a href="https://img.shields.io/github/commits-since/shantanu109/calorieapp_frontend/1.0.0.svg" ><img src="https://img.shields.io/github/commits-since/shantanu109/calorieapp_frontend/1.0.0.svg"></a>   <a href="https://img.shields.io/github/issues/shantanu109/calorieapp_frontend.svg" ><img src="https://img.shields.io/github/issues/shantanu109/calorieapp_frontend.svg"></a>  <a href="https://img.shields.io/github/issues-closed/shantanu109/calorieapp_frontend.svg"><img src="https://img.shields.io/github/issues-closed/shantanu109/calorieapp_frontend.svg"></a> 
-[![Repo-size](https://img.shields.io/github/repo-size/shantanu109/calorieapp_frontend)](https://GitHub.com/shantanu109/calorieapp_frontend/)
+[![Repo-size](https://img.shields.io/github/repo-size/adamyen/calorieapp_frontend)](https://GitHub.com/adamyen/calorieapp_frontend/)
 [![file_count](https://img.shields.io/github/directory-file-count/shantanu109/calorieapp_frontend)](https://GitHub.com/shantanu109/calorieapp_frontend/)
-[![language_count](https://img.shields.io/github/languages/count/shantanu109/calorieapp_frontend)](https://GitHub.com/shantanu109/calorieapp_frontend/)  
+[![language_count](https://img.shields.io/github/languages/count/adamyen/calorieapp_frontend)](https://GitHub.com/adamyen/calorieapp_frontend/)
+[![build](https://img.shields.io/travis/adamyen/calorieapp_frontend)]
+[![coverage](https://img.shields.io/coveralls/github/adamyen/calorieapp_frontend)]  
 
 ![WhatsApp Image 2021-09-28 at 2 48 00 PM](https://user-images.githubusercontent.com/25662536/135546154-cfae1d2e-439a-4edc-b0bb-57f693ef5a83.jpeg)
 
@@ -37,6 +39,7 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
  - Record of calories in and calories burn out day wise in History tab.
  - Helps user to figure out how much to eat/exercise according to their desired goal(weight loss/gain).
  - Easy to use application.
+ - Mobile app versions available for both Android and iOS
 
 # Implementation:
 Link to YouTube video of the implementation of the BurnOut application:
@@ -50,6 +53,9 @@ Link to YouTube video of the implementation of the BurnOut application:
  - ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)  
  - ![RestAPI](https://img.shields.io/badge/RestAPI-005571?style=for-the-badge&logo=restapi)
  - ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+ - ![Ionic](https://img.shields.io/badge/Ionic-005571?style=for-the-badge&logo=ionic)
+ - ![Android Studio](https://img.shields.io/badge/AndroidStudio-005571?style=for-the-badge&logo=android&logoColor=ffdd54)
+ - ![Xcode](https://img.shields.io/badge/Xcode-005571?style=for-the-badge&logo=xcode)
  
  # Core Functionalities:
  
@@ -97,6 +103,7 @@ Link to YouTube video of the implementation of the BurnOut application:
 
  - In order to build new versions of the mobile app, ensure Ionic is installed
 #### `npm install -g @ionic/cli`
+#### `npm install @capacitor/core --save`
 
  - Then enter below command for both the terminals to start the application:
 #### `npm start`
@@ -116,8 +123,8 @@ Link to YouTube video of the implementation of the BurnOut application:
  - Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
  
 # Source Code
- - Link to frontend repository: https://github.com/shantanu109/calorieapp_frontend
- - Link to backend repository: https://github.com/shantanu109/calorieApp_server
+ - Link to frontend repository: https://github.com/adamyen/calorieapp_frontend
+ - Link to backend repository: https://github.com/adamyen/calorie_server
 
 # Additional commands for React App
 
@@ -167,6 +174,16 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
  - Varun Garg(vgarg4@ncsu.edu)
 
  - Urmi Kashyap Pathak(upathak@ncsu.edu)
+
+### Additional Team Members (Project 2)
+ 
+ - Angela Ho (aho@ncsu.edu)
+
+ - Adam Yen (hyen@ncsu.edu)
+
+ - Arnold Lee(klee32@ncsu.edu)
+
+ - Dani Hove(dphove@ncsu.edu)
 
 # Contribution
 

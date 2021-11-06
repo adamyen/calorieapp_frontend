@@ -127,7 +127,7 @@ code {
   color: #616161;
   border-right: none;
   border-left: none;
-  border-bottom: ;
+  border-bottom: none;
   cursor: pointer;
   /* justify-content: space-evenly; */
   margin-bottom: 10px;
@@ -418,6 +418,7 @@ nav .nav-links ul li:hover {
   justify-content: center;
   align-items: center;
   width: 30%;
+  min-width: 330px;
   margin: 50px auto;
   border-radius: 6px;
 }
@@ -430,6 +431,7 @@ nav .nav-links ul li:hover {
   justify-content: center;
   align-items: center;
   width: 30%;
+  min-width: 330px;
   margin: 50px auto;
   border-radius: 6px;
 
@@ -773,6 +775,14 @@ nav .nav-links ul li:hover {
 
 .home__section{
   display: flex;
+  padding:30px;
+}
+
+.meal_plan__section{
+  height: 400px;
+  width: 450px;
+  justify-content: center;
+  align-items: center;
   padding:30px;
 }
 

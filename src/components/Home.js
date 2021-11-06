@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import ImgSlider from './ImgSlider';
-import Widgets from './Widgets';
 import Card from './Card';
 import {Itembox} from './';
-
 
 class Home extends Component {
     render() {
@@ -11,30 +9,30 @@ class Home extends Component {
             <div>
                 <ImgSlider />
                 {/* <Widgets /> */}
-<<<<<<< HEAD
-                <div className="f6-display">
-                    <Card src="/images/R11.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
-=======
                 <div className="home__section">
                     <Card src="/images/Meal-Plan.jpeg" title="Customize Meal Plan" description="Your personal meal plan will be designed by our professional trainer." url="mealPlan"/>
->>>>>>> 13fa1d544f6a5c5e4b39b5c2b2b116c35be01477
                     <Card src="/images/R12.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
                     <Card src="/images/R13.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
+                    <Card src="/images/R11.jpg" title="Yoga for Beginner" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
+                    <Card src="/images/R12.jpg" title="Yoga for Intermediate" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
+                    <Card src="/images/R13.jpg" title="Yoga for Advanced" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
                 </div>
-                <div className="f6-display">
-                <Card src="/images/R21.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
-                <Card src="/images/R22.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
-                <Card src="/images/R23.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
+
+                <div className="body__infoText2">
+                <h2>Meal Plan</h2>
+                <div className="meal_plan__section">
+                    <Card src="/images/Meal-Plan.jpeg" title="Customize Meal Plan" description="Your personal meal plan will be designed by our professional trainer." url="mealPlan"/>
+                </div>
                 </div>
 
                 <div className="body__infoText2">
                 <h2>5 Must Try Workouts</h2>
                 <div className="f6-display">
        
-                <Itembox src="/images/R21.jpg" title="Walk Fitness" />
-                <Itembox src="/images/R22.jpg" title="Dance Fitness"/>
-                <Itembox src="/images/R23.jpg" title="HRX"/>
-                <Itembox src="/images/R24.jpg" title="Yoga"/>
+                <Itembox src="/images/R21.jpg" title="Walk Fitness" url="walkfitness" />
+                <Itembox src="/images/R22.jpg" title="Dance Fitness" url="dancefitness" />
+                <Itembox src="/images/R23.jpg" title="HRX" url="hrx"/>
+                <Itembox src="/images/R24.jpg" title="Yoga" url="yoga"/>
                 
             
                  </div>
@@ -73,16 +71,9 @@ class Home extends Component {
                 <Itembox src="/images/R52.jpg" title="Dance: Bolly Punjabi"/>
                 <Itembox src="/images/R53.jpg" title="Beginner Cardio Dance"/>
                 <Itembox src="/images/R54.jpg" title="Dance for Joy #6"/>
-                
-            
                 </div>
-
                 </div>
             </div>
-
-            
-
-            
         );
     }
 }
