@@ -2,18 +2,13 @@ import React, { Component } from 'react';
 import { clearAuthState, login ,loginGoogle} from '../actions/auth';
 import { connect } from 'react-redux';
 import { Redirect } from 'react-router-dom';
-// import GoogleLogin from 'react-google-login';
-
-
 
 class Login extends Component {
   constructor(props) {
     super(props);
-    //this.emailInputRef = React.createRef();
-    //this.passwordInputRef = React.createRef();
 
     this.state = {
-      email: '',
+      username: '',
       password: '',
       
     };
@@ -26,7 +21,7 @@ class Login extends Component {
 
   handleEmailChange = (e) => {
     this.setState({
-      email: e.target.value,
+      username: e.target.value,
     });
   };
 
@@ -38,24 +33,12 @@ class Login extends Component {
 
   handleFormSubmit = (e) => {
     e.preventDefault();
-    //console.log('this.emailInputRef', this.emailInputRef);
-    //console.log('this.passwordInputRef', this.passwordInputRef);
-    console.log(this.state);
-    const { email, password } = this.state;
+    const { username, password } = this.state;
 
-    if (email && password) {
-      this.props.dispatch(login(email, password));
+    if (username && password) {
+      this.props.dispatch(login(username, password));
     }
   };
-
-//   responseGoogle = (response)=>{
-//     console.log(response);
-//     console.log(response.profileObj);
-    
-//     this.props.dispatch(login(response.profileObj.email,response.profileObj.googleId))
-//   }
-
-  
 
   render() {
 
@@ -73,12 +56,10 @@ class Login extends Component {
         {error && <div className="alert error-dailog">{error}</div>}
         <div className="field">
           <input
-            type="email"
-            placeholder="Email"
+            placeholder="Name"
             required
-            ref={this.emailInputRef}
             onChange={this.handleEmailChange}
-            value={this.state.email}
+            value={this.state.username}
           />
         </div>
         <div className="field">
@@ -99,16 +80,6 @@ class Login extends Component {
           
         </div>
       </form>
-      {/* <div style={{marginLeft:'46vw'}}>
-      <GoogleLogin
-        clientId="856518495899-eebbk7k67frq3389d2jeevhejt5haa7h.apps.googleusercontent.com"
-        buttonText="Login"
-        onSuccess={this.responseGoogle}
-        onFailure={this.responseGoogle}
-        cookiePolicy={'single_host_origin'}
-        
-      />
-      </div> */}
       </div>
     );
   }
