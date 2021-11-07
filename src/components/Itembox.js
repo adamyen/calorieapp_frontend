@@ -1,27 +1,23 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import './Itembox.css';
-// import { useDataLayerValue } from "./DataLayer";
 
-function Itembox({src,title,url}){
-    
+function Itembox(props) {
+    let history = useHistory();
+    function handleClick() {
+        const url = props.url || '/yoga';
+        history.push(url);
+    }
     
     return (
-        <div onClick={ ()=>{window.location.href=`/${url}`} }>
+        <div onClick={handleClick}>
             <figure className="f6-song-img-2">
-
-            <img className="songbox__img" src={src} alt="" />
-            
+            <img className="songbox__img" src={props.src} alt="" />
                 <figcaption>
-                <h4 className="caption-name" style={{color:'black'}}>{title}</h4>
-                {/* <span className="caption-date">
-                    {album.artists.map((artist) => artist.name).join(", ")}  */}
-                    {/* {album.release_date} */}
-
-                {/* </span> */}
+                    <h4 className="caption-name" style={{color:'black'}}>{props.title}</h4>
                 </figcaption>
             </figure>
-
-         </div>
+        </div>
     )
 }
 
