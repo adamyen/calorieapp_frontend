@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import ImgSlider from './ImgSlider';
-import Card from './Card';
-import {Itembox} from './';
+import React from 'react';
+import { ImgSlider, Itembox, Card } from '../components';
 
-class Home extends Component {
+import YogaClasses from '../config/Yoga';
+
+class Home extends React.PureComponent {
     render() {
         return (
             <div>
@@ -11,18 +11,7 @@ class Home extends Component {
                 {/* <Widgets /> */}
                 <div className="home__section">
                     <Card src="/images/Meal-Plan.jpeg" title="Customize Meal Plan" description="Your personal meal plan will be designed by our professional trainer." url="mealPlan"/>
-                    <Card src="/images/R12.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
-                    <Card src="/images/R13.jpg" title="Yoga for Beginners" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
-                    <Card src="/images/R11.jpg" title="Yoga for Beginner" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
-                    <Card src="/images/R12.jpg" title="Yoga for Intermediate" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
-                    <Card src="/images/R13.jpg" title="Yoga for Advanced" description="A collection of dumbbell workouts by your favorite trainers specific to particular muscle group."/>
-                </div>
-
-                <div className="body__infoText2">
-                <h2>Meal Plan</h2>
-                <div className="meal_plan__section">
-                    <Card src="/images/Meal-Plan.jpeg" title="Customize Meal Plan" description="Your personal meal plan will be designed by our professional trainer." url="mealPlan"/>
-                </div>
+                    {YogaClasses.map(props => (<Card {...props} />))}
                 </div>
 
                 <div className="body__infoText2">

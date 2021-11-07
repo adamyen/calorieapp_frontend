@@ -1,4 +1,3 @@
-import Home from './Home';
 import Page404 from './Page404';
 import Navbar from './Navbar';
 import Login from './Login';
@@ -7,8 +6,30 @@ import Settings from './Settings';
 import Itembox from './Itembox';
 import Goal from './Goal';
 import History from './History';
-
+import ImgSlider from './ImgSlider';
+import Card from './Card';
 import Card1 from './Card1';
+import MealPlan from './MealPlan';
+import MealPlanResult from './MealPlanResult';
+import WalkFitness from './WalkFitness';
+import DanceFitness from './DanceFitness';
+import HRX from './HRX';
 
-
-export {Home, Page404, Navbar, Login, Signup, Settings, Itembox, Goal, History, Card1}
+export {
+    Page404,
+    Navbar,
+    Login,
+    Signup,
+    Settings,
+    Itembox,
+    Goal,
+    History,
+    Card,
+    Card1,
+    ImgSlider,
+    MealPlan,
+    MealPlanResult,
+    WalkFitness,
+    DanceFitness,
+    HRX,
+};

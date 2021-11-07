@@ -1,3 +1,3 @@
-import WorkoutBase from "./WorkoutBase";
+import Workout from "./Workout";
 
-export { WorkoutBase };
+export { Workout };

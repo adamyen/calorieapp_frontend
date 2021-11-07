@@ -32,4 +32,4 @@ class HRX extends Component {
     event.target.pauseVideo();
   }
 }
-export default HRX
+export default HRX;
