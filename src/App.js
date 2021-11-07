@@ -1,5 +1,5 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 import jwtDecode from 'jwt-decode';
 import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 import {
@@ -16,52 +16,35 @@ import {
     DanceFitness,
     HRX,
 } from './components';
-import { Home } from './views';
-import { Workout } from './views/workout';
+import { Home, Workout } from './views';
 import { authenticateUser } from './actions/auth';
 import { getAuthTokenFromLocalStorage } from './helpers/utils';
 
 const PrivateRoute = (privateRouteProps) => {
-  const { isLoggedIn, path, component: Component } = privateRouteProps;
-
-  return (
-    <Route
-      path={path}
-      render={(props) => {
-        return isLoggedIn ? (
-          <Component {...props} />
-        ) : (
-          <Redirect
-            to={{
-              pathname: '/login',
-              state: {
-                from: props.location,
-              },
-            }}
-          />
-        );
-      }}
-    />
-  );
+    const { isLoggedIn, path, component: Component } = privateRouteProps;
+    const renderPage = props => isLoggedIn
+        ? (<Component {...props} />)
+        : (<Redirect to={{ pathname: '/login', state: { from: props.location } }}/>);
+    return (
+        <Route path={path} render={renderPage} />
+    );
 };
 
-
-
-class App extends React.Component {
-  componentDidMount() {
-    const token = getAuthTokenFromLocalStorage();
-    if (token) {
-      const user = jwtDecode(token);
-      console.log('user', user);
-      this.props.dispatch(
-        authenticateUser({
-          email: user.email,
-          _id: user._id,
-          name: user.name,
-        })
-      );
+class App extends React.PureComponent {
+    componentDidMount() {
+        const token = getAuthTokenFromLocalStorage();
+        if (token) {
+            const user = jwtDecode(token);
+            console.log('user', user);
+            this.props.dispatch(
+                authenticateUser({
+                    email: user.email,
+                    _id: user._id,
+                    name: user.name,
+                })
+            );
+        }
     }
-  }
 
   render() {
     return (
