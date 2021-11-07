@@ -6,7 +6,8 @@ function Card(props){
     let history = useHistory();
 
     function handleClick() {
-        history.push("/yoga");
+        const url = props.url || '/yoga';
+        history.push(url, props.locationState);
     }
 
     return (
