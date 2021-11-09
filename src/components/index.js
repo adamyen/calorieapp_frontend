@@ -4,7 +4,6 @@ import Login from './Login';
 import Signup from './Signup';
 import Settings from './Settings';
 import Itembox from './Itembox';
-import Goal from './Goal';
 import History from './History';
 import ImgSlider from './ImgSlider';
 import Card from './Card';
@@ -22,7 +21,6 @@ export {
     Signup,
     Settings,
     Itembox,
-    Goal,
     History,
     Card,
     Card1,

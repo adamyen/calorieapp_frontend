@@ -8,7 +8,6 @@ import {
     Login,
     Signup,
     Settings,
-    Goal,
     History,
     MealPlan,
     MealPlanResult,
@@ -16,7 +15,7 @@ import {
     DanceFitness,
     HRX,
 } from './components';
-import { Home, Workout } from './views';
+import { Home, Workout, GoalSetting } from './views';
 import { authenticateUser } from './actions/auth';
 import { getAuthTokenFromLocalStorage } from './helpers/utils';
 
@@ -68,7 +67,7 @@ class App extends React.PureComponent {
                 />
                 <PrivateRoute
                     path="/goal"
-                    component={Goal}
+                    component={GoalSetting}
                     isLoggedIn={this.props.auth.isLoggedIn}
                 />
                 <PrivateRoute
