@@ -6,8 +6,15 @@ function Card(props){
     let history = useHistory();
 
     function handleClick() {
-        const url = props.url || '/yoga';
-        history.push(url, props.locationState);
+        if (props.disableClick) {
+            return;
+        }
+        if (props.onClick) {
+            props.onClick();
+        } else {
+            const url = props.url || '/yoga';
+            history.push(url, props.locationState);   
+        }
     }
 
     return (
@@ -18,7 +25,7 @@ function Card(props){
             <img src={props.src} alt="" />
             <div className="card__info">
                 <h2>{props.title}</h2>
-                <h4>{props.description}</h4>
+                {props.description && (<h4>{props.description}</h4>)}
             </div>
         </div>
     )
