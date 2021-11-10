@@ -15,7 +15,7 @@ import {
     DanceFitness,
     HRX,
 } from './components';
-import { Home, Workout, GoalSetting } from './views';
+import { Home, Workout, GoalSetting, GoalDetail } from './views';
 import { authenticateUser } from './actions/auth';
 import { getAuthTokenFromLocalStorage } from './helpers/utils';
 
@@ -46,6 +46,7 @@ class App extends React.PureComponent {
     }
 
   render() {
+    const { isLoggedIn } = this.props.auth;
     return (
         <Router>
             <Navbar />
@@ -63,17 +64,22 @@ class App extends React.PureComponent {
                 <PrivateRoute
                     path="/settings"
                     component={Settings}
-                    isLoggedIn={this.props.auth.isLoggedIn}
+                    isLoggedIn={isLoggedIn}
                 />
                 <PrivateRoute
                     path="/goal"
                     component={GoalSetting}
-                    isLoggedIn={this.props.auth.isLoggedIn}
+                    isLoggedIn={isLoggedIn}
+                />
+                <PrivateRoute
+                    path="/goal_detail"
+                    component={GoalDetail}
+                    isLoggedIn={isLoggedIn}
                 />
                 <PrivateRoute
                     path="/history"
                     component={History}
-                    isLoggedIn={this.props.auth.isLoggedIn}
+                    isLoggedIn={isLoggedIn}
                 />
                 
                 <Route component={Page404}/>
