@@ -958,3 +958,8 @@ box-sizing: border-box;
 .enroll button:hover {
   cursor: pointer;
 }
+
+.base {
+  padding-left: 10px;
+  padding-right: 10px;
+}

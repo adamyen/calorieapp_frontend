@@ -11,9 +11,6 @@ import {
     History,
     MealPlan,
     MealPlanResult,
-    WalkFitness,
-    DanceFitness,
-    HRX,
 } from './components';
 import { Home, Workout, GoalSetting, GoalDetail } from './views';
 import { authenticateUser } from './actions/auth';
@@ -56,10 +53,7 @@ class App extends React.PureComponent {
                 <Route path ="/signup" component={Signup}/> 
                 <Route path ="/mealPlan" component={MealPlan}/>
                 <Route path ="/mealPlanResult" component={MealPlanResult}/>
-                <Route path ="/walkfitness" component={WalkFitness}/>
-                <Route path ="/dancefitness" component={DanceFitness}/>
-                <Route path ="/hrx" component={HRX}/>
-                <Route path ="/yoga" component={Workout}/>
+                <Route path ="/workout" component={Workout}/>
 
                 <PrivateRoute
                     path="/settings"

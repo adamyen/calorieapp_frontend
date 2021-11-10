@@ -10,9 +10,6 @@ import Card from './Card';
 import Card1 from './Card1';
 import MealPlan from './MealPlan';
 import MealPlanResult from './MealPlanResult';
-import WalkFitness from './WalkFitness';
-import DanceFitness from './DanceFitness';
-import HRX from './HRX';
 
 export {
     Page404,
@@ -27,7 +24,4 @@ export {
     ImgSlider,
     MealPlan,
     MealPlanResult,
-    WalkFitness,
-    DanceFitness,
-    HRX,
 };

@@ -4,9 +4,17 @@ import './Itembox.css';
 
 function Itembox(props) {
     let history = useHistory();
+
     function handleClick() {
-        const url = props.url || '/yoga';
-        history.push(url);
+        if (props.disableClick) {
+            return;
+        }
+        if (props.onClick) {
+            props.onClick();
+        } else {
+            const url = props.url || '/workout';
+            history.push(url, props.locationState);   
+        }
     }
     
     return (

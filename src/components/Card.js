@@ -12,7 +12,7 @@ function Card(props){
         if (props.onClick) {
             props.onClick();
         } else {
-            const url = props.url || '/yoga';
+            const url = props.url || '/workout';
             history.push(url, props.locationState);   
         }
     }
