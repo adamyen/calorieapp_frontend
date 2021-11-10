@@ -19,7 +19,7 @@ const Workouts = [
     },
     {
         src: '/images/R23.jpg',
-        title: 'HRX',
+        title: 'HRX Fitness',
         locationState: {
             videoId: 'zu1ALQbKU18',
             title: 'HRX',

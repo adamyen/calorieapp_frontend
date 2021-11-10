@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom';
 import './Card.css';
 
 function Card(props){
+    console.log('>>>> Card props', props)
     let history = useHistory();
 
     function handleClick() {
@@ -21,6 +22,7 @@ function Card(props){
         <div
             className='card'
             onClick={handleClick}
+            style={{width: props.width, height: props.height}}
         >
             <img src={props.src} alt="" />
             <div className="card__info">

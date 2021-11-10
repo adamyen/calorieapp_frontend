@@ -1,11 +1,15 @@
 import React from "react";
 import { connect } from 'react-redux';
 import MealPlan from "./MealPlan";
+import WorkoutPlan from "./WorkoutPlan";
 
 function Details(props) {
+    const component = props.goal.type === 'meal'
+        ? (<MealPlan {...props.goal}/>)
+        : (<WorkoutPlan {...props.goal}/>)
     return (
         <div className="container-col">
-            <MealPlan {...props.goal}/>
+            {component}
         </div>
     );
 }

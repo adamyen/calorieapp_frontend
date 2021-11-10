@@ -9,7 +9,7 @@ function Setting() {
         <>
             {type === 0
                 ? (<ChooseGoal onClick={setType}/>)
-                : (<SetBodyData popToTop={() => setType(0)}/>)
+                : (<SetBodyData planType={type} popToTop={() => setType(0)}/>)
             }
         </>
     );
