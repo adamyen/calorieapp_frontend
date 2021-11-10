@@ -16,13 +16,13 @@
 }
 .songbox__img{
     box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+	border-radius: 10px;
 }
 
 .songbox__img:hover{
     cursor: pointer;
     background-color: black;
     opacity: 0.8;
-
 }
 
 

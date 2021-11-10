@@ -4,12 +4,12 @@ import SetBodyData from './SetBodyData';
 import './index.css';
 
 function Setting() {
-    const [type, setType] = useState(null);
+    const [type, setType] = useState(0);
     return (
         <>
-            {type === null
+            {type === 0
                 ? (<ChooseGoal onClick={setType}/>)
-                : (<SetBodyData />)
+                : (<SetBodyData popToTop={() => setType(0)}/>)
             }
         </>
     );
