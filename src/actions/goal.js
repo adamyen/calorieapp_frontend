@@ -1,5 +1,5 @@
-import { GOAL_CREATE } from "./actionTypes"
+import { CREATE_GOAL } from "./actionTypes"
 
 export function createGoal(goal) {
-    return { type: GOAL_CREATE, goal }
+    return { type: CREATE_GOAL, goal }
 }

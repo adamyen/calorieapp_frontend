@@ -39,4 +39,6 @@ export const UPDATE_TOTAL = "UPDATE_TOTAL";
 
 export const CLEAR_HISTORY_STATE = "CLEAR_HISTORY_STATE";
 
-export const GOAL_CREATE = 'GOAL/CREATE';
+export const CREATE_GOAL = 'GOAL/CREATE';
+
+export const ADD_CALORIES = 'CALORIES/ADD';

@@ -1,10 +1,10 @@
-import { GOAL_CREATE } from "../actions/actionTypes";
+import { CREATE_GOAL } from "../actions/actionTypes";
 
 const initialState = [];
 
 export default function goal(state = initialState, action) {
     switch (action.type) {
-        case GOAL_CREATE:
+        case CREATE_GOAL:
             const goal = state;
             const newGoal = { ...action.goal, id: goal.length + 1 };
             goal.push(newGoal);
