@@ -4,6 +4,7 @@ import search from './search';
 import food from './food';
 import history from './history';
 import goal from './goal';
+import calories from "./calories";
 
 export default combineReducers({
     auth,
@@ -11,4 +12,5 @@ export default combineReducers({
     food,
     history,
     goal,
+    calories,
 })
