@@ -6,7 +6,6 @@ import WorkoutPlan from "./WorkoutPlan";
 import { addCalories } from '../../actions/calories';
 
 function Details(props) {
-    console.log('>>>> Details props', props);
     let history = useHistory();
     const consumedCalories = cal => {
         props.addCalories(['consumed', cal]);

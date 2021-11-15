@@ -3,7 +3,6 @@ import Fastfood from '@material-ui/icons/Fastfood';
 import { Card } from '../../components';
 
 export default function MealPlan(props) {
-    console.log('>>> props', props);
     const { veg, veg2, grain, grain2, protein, protein2 } = props.foods;
     const bfCal = veg.calories + grain.calories + protein.calories;
     const ldCal = veg2.calories + grain2.calories + protein2.calories;
