@@ -10,6 +10,7 @@ import Card from './Card';
 import Card1 from './Card1';
 import MealPlan from './MealPlan';
 import MealPlanResult from './MealPlanResult';
+import SimpleBar from './SimpleBar';
 
 export {
     Page404,
@@ -24,4 +25,5 @@ export {
     ImgSlider,
     MealPlan,
     MealPlanResult,
+    SimpleBar,
 };
