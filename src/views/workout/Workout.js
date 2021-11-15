@@ -1,8 +1,14 @@
 import React from "react";
+import { connect } from 'react-redux';
+import { useHistory } from 'react-router-dom';
 import YouTube from 'react-youtube';
+import Whatshot from '@material-ui/icons/Whatshot';
+import { addCalories } from '../../actions/calories';
 import './Workout.css';
 
 function Workout(props) {
+    let history = useHistory();
+
     const opts = {
         height: '507',
         width: '832',
@@ -17,7 +23,12 @@ function Workout(props) {
         event.target.pauseVideo();
     }
 
-    const { videoId, title, description } = props.location.state;
+    const workoutComplete = () => {
+        props.addCalories(['burned', props.location.state.calories]);
+        history.push('/history');
+    }
+
+    const { videoId, title, description, calories } = props.location.state;
     return (
         <div className="wrapper">
             <div className="container">
@@ -29,10 +40,21 @@ function Workout(props) {
             </div>
             <div className="container-col">
                 <h2>{title}</h2>
+                <div className="container">
+                    <Whatshot fontSize="large" style={{fill: 'red'}}/>
+                    <h3 className="h3-color">{`${calories} Calories`}</h3>
+                </div>
                 <h4>{description}</h4>
+                <button className="btn" onClick={workoutComplete}>
+                    Workout Completed
+                </button>
             </div>
         </div>
     );
 }
 
-export default Workout;
+const mapDispatchToProps = dispatch => ({
+    addCalories: c => dispatch(addCalories(c))
+});
+
+export default connect(null, mapDispatchToProps)(Workout);

@@ -8,11 +8,10 @@ import {
     Login,
     Signup,
     Settings,
-    History,
     MealPlan,
     MealPlanResult,
 } from './components';
-import { Home, Workout, GoalSetting, GoalDetail } from './views';
+import { Home, History, Workout, GoalSetting, GoalDetail } from './views';
 import { authenticateUser } from './actions/auth';
 import { getAuthTokenFromLocalStorage } from './helpers/utils';
 

@@ -12,7 +12,10 @@ function WorkoutPlan(props) {
         <div className="grid-container-col">
             <div className="grid-title">{days[i]}</div>
             <div className="grid-item">
-                <Card {...w} disableClick/>
+                <Card
+                    {...w}
+                    disableClick={props.disableClick}
+                />
             </div>
         </div>
     ));

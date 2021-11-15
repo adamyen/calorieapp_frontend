@@ -21,9 +21,11 @@ function SetBodyData(props) {
     }
 
     const generateGoal = (data = {}) => {
+        const goal = props.planType === 2
+            ? suggestions
+            : data
         props.createGoal({
-            ...data,
-            ...suggestions,
+            ...goal,
             age: age,
             gender: gender,
             weight: weight,
@@ -34,7 +36,7 @@ function SetBodyData(props) {
     }
 
     const component = props.planType === 1
-        ? (<WorkoutPlan enrollGoal={generateGoal} />)
+        ? (<WorkoutPlan enrollGoal={generateGoal} disableClick />)
         : (<MealPlan
             {...suggestions}
             enrollGoal={generateGoal}
