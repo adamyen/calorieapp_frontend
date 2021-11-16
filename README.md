@@ -107,8 +107,6 @@ Link to YouTube video of the implementation of the BurnOut application:
  - Link to frontend repository: https://github.com/adamyen/calorieapp_frontend
  - Link to backend repository: https://github.com/adamyen/calorie_server
 
-# Additional commands for React App
-
 ## Available Scripts
 
 In the project directory, you can run:
