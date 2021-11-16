@@ -62,11 +62,8 @@ Link to YouTube video of the implementation of the BurnOut application:
  ## Meal Planner
  ![meal-planner](https://github.com/adamyen/calorieapp_frontend/blob/main/public/mealPlanner.gif)
  
- ## Set User Profile
- ![User](https://user-images.githubusercontent.com/25662536/135188482-8a80702e-3405-479a-be9f-3fa5cb249a9f.gif)
- 
- ## Enter Calories in and burnt
- ![enterfood](https://user-images.githubusercontent.com/25662536/135545398-70feedb5-b82e-41d9-996e-d3902492883e.gif)
+ ## Track my calories
+ ![track-calorie](https://github.com/adamyen/calorieapp_frontend/blob/main/public/chart.gif)
 
 # Steps for Execution:
  - Install [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows)
@@ -164,7 +161,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
  
  - Angela Ho (aho@ncsu.edu)
 
- - Adam Yen (hyen@ncsu.edu)
+ - Adam Yen (fyen@ncsu.edu)
 
  - Arnold Lee(klee32@ncsu.edu)
 
