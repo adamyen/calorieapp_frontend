@@ -1,9 +1,7 @@
-<a href="https://doi.org/10.5281/zenodo.5534872"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5534872.svg" alt="DOI"></a> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/shantanu109/calorieapp_frontend/blob/main/LICENSE.md) <a href="https://img.shields.io/github/commits-since/shantanu109/calorieapp_frontend/1.0.0.svg" ><img src="https://img.shields.io/github/commits-since/shantanu109/calorieapp_frontend/1.0.0.svg"></a>   <a href="https://img.shields.io/github/issues/shantanu109/calorieapp_frontend.svg" ><img src="https://img.shields.io/github/issues/shantanu109/calorieapp_frontend.svg"></a>  <a href="https://img.shields.io/github/issues-closed/shantanu109/calorieapp_frontend.svg"><img src="https://img.shields.io/github/issues-closed/shantanu109/calorieapp_frontend.svg"></a> 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5705613.svg)](https://doi.org/10.5281/zenodo.5705613) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/shantanu109/calorieapp_frontend/blob/main/LICENSE.md) <a href="https://img.shields.io/github/commits-since/shantanu109/calorieapp_frontend/1.0.0.svg" ><img src="https://img.shields.io/github/commits-since/shantanu109/calorieapp_frontend/1.0.0.svg"></a>   <a href="https://img.shields.io/github/issues/shantanu109/calorieapp_frontend.svg" ><img src="https://img.shields.io/github/issues/shantanu109/calorieapp_frontend.svg"></a>  <a href="https://img.shields.io/github/issues-closed/shantanu109/calorieapp_frontend.svg"><img src="https://img.shields.io/github/issues-closed/shantanu109/calorieapp_frontend.svg"></a> 
 [![Repo-size](https://img.shields.io/github/repo-size/adamyen/calorieapp_frontend)](https://GitHub.com/adamyen/calorieapp_frontend/)
 [![file_count](https://img.shields.io/github/directory-file-count/shantanu109/calorieapp_frontend)](https://GitHub.com/shantanu109/calorieapp_frontend/)
 [![language_count](https://img.shields.io/github/languages/count/adamyen/calorieapp_frontend)](https://GitHub.com/adamyen/calorieapp_frontend/)
-[![build](https://img.shields.io/travis/adamyen/calorieapp_frontend)]
-[![coverage](https://img.shields.io/coveralls/github/adamyen/calorieapp_frontend)]  
 
 ![WhatsApp Image 2021-09-28 at 2 48 00 PM](https://user-images.githubusercontent.com/25662536/135546154-cfae1d2e-439a-4edc-b0bb-57f693ef5a83.jpeg)
 
@@ -52,7 +50,6 @@ Link to YouTube video of the implementation of the BurnOut application:
  - ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
  - ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)  
  - ![RestAPI](https://img.shields.io/badge/RestAPI-005571?style=for-the-badge&logo=restapi)
- - ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
  - ![Ionic](https://img.shields.io/badge/Ionic-005571?style=for-the-badge&logo=ionic)
  - ![Android Studio](https://img.shields.io/badge/AndroidStudio-005571?style=for-the-badge&logo=android&logoColor=ffdd54)
  - ![Xcode](https://img.shields.io/badge/Xcode-005571?style=for-the-badge&logo=xcode)
