@@ -59,8 +59,8 @@ Link to YouTube video of the implementation of the BurnOut application:
  ## Workout Planner
 ![workout-planner](https://github.com/adamyen/calorieapp_frontend/blob/main/public/workoutPlanner.gif)
 
- ## Login
- ![ezgif-1-59cd384ca962](https://user-images.githubusercontent.com/25662536/135186441-62458bc0-72ff-41b5-84d4-39b4e8985b71.gif)
+ ## Meal Planner
+ ![meal-planner](https://github.com/adamyen/calorieapp_frontend/blob/main/public/mealPlanner.gif)
  
  ## Set User Profile
  ![User](https://user-images.githubusercontent.com/25662536/135188482-8a80702e-3405-479a-be9f-3fa5cb249a9f.gif)
