@@ -1,9 +1,7 @@
-<a href="https://doi.org/10.5281/zenodo.5534872"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.5534872.svg" alt="DOI"></a> [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/shantanu109/calorieapp_frontend/blob/main/LICENSE.md) <a href="https://img.shields.io/github/commits-since/shantanu109/calorieapp_frontend/1.0.0.svg" ><img src="https://img.shields.io/github/commits-since/shantanu109/calorieapp_frontend/1.0.0.svg"></a>   <a href="https://img.shields.io/github/issues/shantanu109/calorieapp_frontend.svg" ><img src="https://img.shields.io/github/issues/shantanu109/calorieapp_frontend.svg"></a>  <a href="https://img.shields.io/github/issues-closed/shantanu109/calorieapp_frontend.svg"><img src="https://img.shields.io/github/issues-closed/shantanu109/calorieapp_frontend.svg"></a> 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5705613.svg)](https://doi.org/10.5281/zenodo.5705613) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/shantanu109/calorieapp_frontend/blob/main/LICENSE.md) <a href="https://img.shields.io/github/commits-since/shantanu109/calorieapp_frontend/1.0.0.svg" ><img src="https://img.shields.io/github/commits-since/shantanu109/calorieapp_frontend/1.0.0.svg"></a>   <a href="https://img.shields.io/github/issues/shantanu109/calorieapp_frontend.svg" ><img src="https://img.shields.io/github/issues/shantanu109/calorieapp_frontend.svg"></a>  <a href="https://img.shields.io/github/issues-closed/shantanu109/calorieapp_frontend.svg"><img src="https://img.shields.io/github/issues-closed/shantanu109/calorieapp_frontend.svg"></a> 
 [![Repo-size](https://img.shields.io/github/repo-size/adamyen/calorieapp_frontend)](https://GitHub.com/adamyen/calorieapp_frontend/)
 [![file_count](https://img.shields.io/github/directory-file-count/shantanu109/calorieapp_frontend)](https://GitHub.com/shantanu109/calorieapp_frontend/)
 [![language_count](https://img.shields.io/github/languages/count/adamyen/calorieapp_frontend)](https://GitHub.com/adamyen/calorieapp_frontend/)
-[![build](https://img.shields.io/travis/adamyen/calorieapp_frontend)]
-[![coverage](https://img.shields.io/coveralls/github/adamyen/calorieapp_frontend)]  
 
 ![WhatsApp Image 2021-09-28 at 2 48 00 PM](https://user-images.githubusercontent.com/25662536/135546154-cfae1d2e-439a-4edc-b0bb-57f693ef5a83.jpeg)
 
@@ -18,10 +16,9 @@ BurnOut is an easy to use application that keeps track of a user's daily calorie
 - [Core Functionalities:](#core-functionalities)
   - [Register](#register)
   - [Login](#login)
-  - [Set User Profile](#set-user-profile)
-  - [Enter Calories in and burnt](#enter-calories-in-and-burnt)
-  - [Check History](#check-history)
-  - [User History Plot](#user-history-plot)
+  - [Get workout recommendation](##Workout-Planner)
+  - [Get meal recommendation](##Meal-Planner)
+  - [Track calories](##Track-my-calories)
 - [Steps for Execution:](#steps-for-execution)
 - [Source Code](#source-code)
 - [Additional commands for React App](#additional-commands-for-react-app)
@@ -52,24 +49,20 @@ Link to YouTube video of the implementation of the BurnOut application:
  - ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
  - ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)  
  - ![RestAPI](https://img.shields.io/badge/RestAPI-005571?style=for-the-badge&logo=restapi)
- - ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
  - ![Ionic](https://img.shields.io/badge/Ionic-005571?style=for-the-badge&logo=ionic)
  - ![Android Studio](https://img.shields.io/badge/AndroidStudio-005571?style=for-the-badge&logo=android&logoColor=ffdd54)
  - ![Xcode](https://img.shields.io/badge/Xcode-005571?style=for-the-badge&logo=xcode)
  
  # Core Functionalities:
  
- ## Register
-![register2](https://user-images.githubusercontent.com/25662536/135362555-0b318a15-6055-46b1-9a68-fdb6347341b5.gif)
+ ## Workout Planner
+![workout-planner](https://github.com/adamyen/calorieapp_frontend/blob/main/public/workoutPlanner.gif)
 
- ## Login
- ![ezgif-1-59cd384ca962](https://user-images.githubusercontent.com/25662536/135186441-62458bc0-72ff-41b5-84d4-39b4e8985b71.gif)
+ ## Meal Planner
+ ![meal-planner](https://github.com/adamyen/calorieapp_frontend/blob/main/public/mealPlanner.gif)
  
- ## Set User Profile
- ![User](https://user-images.githubusercontent.com/25662536/135188482-8a80702e-3405-479a-be9f-3fa5cb249a9f.gif)
- 
- ## Enter Calories in and burnt
- ![enterfood](https://user-images.githubusercontent.com/25662536/135545398-70feedb5-b82e-41d9-996e-d3902492883e.gif)
+ ## Track my calories
+ ![track-calorie](https://github.com/adamyen/calorieapp_frontend/blob/main/public/chart.gif)
 
 # Steps for Execution:
  - Install [MongoDB](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows)
@@ -114,8 +107,6 @@ Link to YouTube video of the implementation of the BurnOut application:
  - Link to frontend repository: https://github.com/adamyen/calorieapp_frontend
  - Link to backend repository: https://github.com/adamyen/calorie_server
 
-# Additional commands for React App
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -147,8 +138,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
  - Provide/Create separate pages for the tabs displayed on HomePage.
 
- - Creating pages for Meal and Workout plan.
-
  - Optimize the mobile app layouts to take advantage of mobile features.
  
 # Team Members
@@ -167,7 +156,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
  
  - Angela Ho (aho@ncsu.edu)
 
- - Adam Yen (hyen@ncsu.edu)
+ - Adam Yen (fyen@ncsu.edu)
 
  - Arnold Lee(klee32@ncsu.edu)
 
