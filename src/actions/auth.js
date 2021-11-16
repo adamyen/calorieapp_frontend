@@ -27,10 +27,9 @@ export function loginFailed(errorMessage) {
   };
 }
 
-export function loginSuccess(user) {
+export function loginSuccess() {
   return {
     type: LOGIN_SUCCESS,
-    user,
   };
 }
 
@@ -72,9 +71,7 @@ export function signup({ username, email, password }) {
       body,
     })
       .then(res => res.json())
-      .then((data) => {
-        login(username, password);
-      })
+      .then(() => dispatch(signupSuccessful()))
       .catch(e => {
         console.error('Error', e);
         dispatch(signupFailed());
@@ -82,7 +79,7 @@ export function signup({ username, email, password }) {
   };
 }
 
-export function startSingup() {
+export function startSignUp() {
   return {
     type: SIGNUP_START,
   };
@@ -95,10 +92,9 @@ export function signupFailed(error) {
   };
 }
 
-export function signupSuccessful(user) {
+export function signupSuccessful() {
   return {
     type: SIGNUP_SUCCESS,
-    user,
   };
 }
 

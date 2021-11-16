@@ -3,6 +3,7 @@ import History from './History';
 import Workout from './workout/Workout';
 import GoalSetting from './Goal/Setting';
 import GoalDetail from './Goal/Detail';
+import SignUp from './SignUp';
 
 export {
     Home,
@@ -10,4 +11,5 @@ export {
     Workout,
     GoalSetting,
     GoalDetail,
+    SignUp,
 };

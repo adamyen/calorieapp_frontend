@@ -1,7 +1,6 @@
 import Page404 from './Page404';
 import Navbar from './Navbar';
 import Login from './Login';
-import Signup from './Signup';
 import Settings from './Settings';
 import Itembox from './Itembox';
 import History from './History';
@@ -16,7 +15,6 @@ export {
     Page404,
     Navbar,
     Login,
-    Signup,
     Settings,
     Itembox,
     History,

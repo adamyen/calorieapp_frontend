@@ -6,12 +6,11 @@ import {
     Page404,
     Navbar,
     Login,
-    Signup,
     Settings,
     MealPlan,
     MealPlanResult,
 } from './components';
-import { Home, History, Workout, GoalSetting, GoalDetail } from './views';
+import { Home, History, Workout, GoalSetting, GoalDetail, SignUp } from './views';
 import { authenticateUser } from './actions/auth';
 import { getAuthTokenFromLocalStorage } from './helpers/utils';
 
@@ -49,7 +48,7 @@ class App extends React.PureComponent {
             <Switch>
                 <Route exact path ="/" component={Home}/>
                 <Route path ="/login" component={Login}/>
-                <Route path ="/signup" component={Signup}/> 
+                <Route path ="/signup" component={SignUp}/> 
                 <Route path ="/mealPlan" component={MealPlan}/>
                 <Route path ="/mealPlanResult" component={MealPlanResult}/>
                 <Route path ="/workout" component={Workout}/>
