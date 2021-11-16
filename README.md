@@ -141,8 +141,6 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
  - Provide/Create separate pages for the tabs displayed on HomePage.
 
- - Creating pages for Meal and Workout plan.
-
  - Optimize the mobile app layouts to take advantage of mobile features.
  
 # Team Members
